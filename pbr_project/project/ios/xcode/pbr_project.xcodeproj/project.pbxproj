@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B79FE6212B27B3000EF7D9E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B79FE5812B27B2800EF7D9E /* OpenAL.framework */; };
+		A115B4211BD4F5CC00467147 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B4201BD4F5CC00467147 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B4231BD4F5D200467147 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B4221BD4F5D200467147 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B4241BD4F5D700467147 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B4221BD4F5D200467147 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B4251BD4F5DD00467147 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B4201BD4F5CC00467147 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A13519F915C14B6E00E544C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13519F815C14B6E00E544C2 /* CoreLocation.framework */; };
+		A13519FB15C14B7E00E544C2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13519FA15C14B7E00E544C2 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A13519FD15C14C3200E544C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13519F815C14B6E00E544C2 /* CoreLocation.framework */; };
+		A13519FE15C14C3600E544C2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13519FA15C14B7E00E544C2 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A147206816A16476006B4373 /* libmurl_3rd_party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A147206716A16382006B4373 /* libmurl_3rd_party.a */; };
+		A147206916A16476006B4373 /* libmurl_3rd_party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A147206716A16382006B4373 /* libmurl_3rd_party.a */; };
+		A148C36B12A6C611009BADBF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102D1F112606649001DD29B /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A148C36C12A6C611009BADBF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		A148C36D12A6C611009BADBF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12363CA1260C38C007D4C25 /* AudioToolbox.framework */; };
+		A148C36E12A6C611009BADBF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		A148C36F12A6C611009BADBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		A148C37012A6C611009BADBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		A15F486116C9340400D6F824 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485416C9340400D6F824 /* Icon-72.png */; };
+		A15F486216C9340400D6F824 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485416C9340400D6F824 /* Icon-72.png */; };
+		A15F486316C9340400D6F824 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485516C9340400D6F824 /* Icon-Small-50.png */; };
+		A15F486416C9340400D6F824 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485516C9340400D6F824 /* Icon-Small-50.png */; };
+		A15F486516C9340400D6F824 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485616C9340400D6F824 /* Icon-Small.png */; };
+		A15F486616C9340400D6F824 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485616C9340400D6F824 /* Icon-Small.png */; };
+		A15F486716C9340400D6F824 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485716C9340400D6F824 /* Icon-Small@2x.png */; };
+		A15F486816C9340400D6F824 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485716C9340400D6F824 /* Icon-Small@2x.png */; };
+		A15F486916C9340400D6F824 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485816C9340400D6F824 /* Icon.png */; };
+		A15F486A16C9340400D6F824 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485816C9340400D6F824 /* Icon.png */; };
+		A15F486B16C9340400D6F824 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485916C9340400D6F824 /* Icon@2x.png */; };
+		A15F486C16C9340400D6F824 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485916C9340400D6F824 /* Icon@2x.png */; };
+		A15F486D16C9340400D6F824 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = A15F485A16C9340400D6F824 /* iTunesArtwork */; };
+		A15F486E16C9340400D6F824 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = A15F485A16C9340400D6F824 /* iTunesArtwork */; };
+		A15F487116C9340400D6F824 /* MurlLaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485C16C9340400D6F824 /* MurlLaunchImage-568h@2x.png */; };
+		A15F487216C9340400D6F824 /* MurlLaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485C16C9340400D6F824 /* MurlLaunchImage-568h@2x.png */; };
+		A15F487316C9340400D6F824 /* MurlLaunchImage-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485D16C9340400D6F824 /* MurlLaunchImage-Landscape.png */; };
+		A15F487416C9340400D6F824 /* MurlLaunchImage-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485D16C9340400D6F824 /* MurlLaunchImage-Landscape.png */; };
+		A15F487516C9340400D6F824 /* MurlLaunchImage-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485E16C9340400D6F824 /* MurlLaunchImage-Portrait.png */; };
+		A15F487616C9340400D6F824 /* MurlLaunchImage-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485E16C9340400D6F824 /* MurlLaunchImage-Portrait.png */; };
+		A15F487716C9340400D6F824 /* MurlLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485F16C9340400D6F824 /* MurlLaunchImage.png */; };
+		A15F487816C9340400D6F824 /* MurlLaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F485F16C9340400D6F824 /* MurlLaunchImage.png */; };
+		A15F487916C9340400D6F824 /* MurlLaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F486016C9340400D6F824 /* MurlLaunchImage@2x.png */; };
+		A15F487A16C9340400D6F824 /* MurlLaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15F486016C9340400D6F824 /* MurlLaunchImage@2x.png */; };
+		A15F487D16C934CE00D6F824 /* libmurl_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15F487B16C934CE00D6F824 /* libmurl_engine.a */; };
+		A15F487E16C934CE00D6F824 /* libmurl_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15F487B16C934CE00D6F824 /* libmurl_engine.a */; };
+		A15F487F16C934CE00D6F824 /* libmurl_platform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15F487C16C934CE00D6F824 /* libmurl_platform.a */; };
+		A15F488016C934CE00D6F824 /* libmurl_platform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15F487C16C934CE00D6F824 /* libmurl_platform.a */; };
+		A15F488716C9353F00D6F824 /* pbr_project_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15F488116C9353E00D6F824 /* pbr_project_app.cpp */; };
+		A15F488816C9353F00D6F824 /* pbr_project_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15F488116C9353E00D6F824 /* pbr_project_app.cpp */; };
+		A15F488B16C9353F00D6F824 /* pbr_project_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15F488516C9353E00D6F824 /* pbr_project_logic.cpp */; };
+		A15F488C16C9353F00D6F824 /* pbr_project_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15F488516C9353E00D6F824 /* pbr_project_logic.cpp */; };
+		A17825761802FE2200D77389 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825711802FE2200D77389 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A17825771802FE2200D77389 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825711802FE2200D77389 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A17825781802FE2200D77389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825721802FE2200D77389 /* AVFoundation.framework */; };
+		A17825791802FE2200D77389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825721802FE2200D77389 /* AVFoundation.framework */; };
+		A178257A1802FE2200D77389 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825731802FE2200D77389 /* CoreMedia.framework */; };
+		A178257B1802FE2200D77389 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825731802FE2200D77389 /* CoreMedia.framework */; };
+		A178257C1802FE2200D77389 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825741802FE2200D77389 /* CoreVideo.framework */; };
+		A178257D1802FE2200D77389 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825741802FE2200D77389 /* CoreVideo.framework */; };
+		A178257E1802FE2200D77389 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825751802FE2200D77389 /* MediaPlayer.framework */; };
+		A178257F1802FE2200D77389 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17825751802FE2200D77389 /* MediaPlayer.framework */; };
+		A1B996661C1868090052ED18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B996641C1868090052ED18 /* Images.xcassets */; };
+		A1B996671C1868090052ED18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B996641C1868090052ED18 /* Images.xcassets */; };
+		A1B996681C1868090052ED18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B996651C1868090052ED18 /* LaunchScreen.xib */; };
+		A1B996691C1868090052ED18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1B996651C1868090052ED18 /* LaunchScreen.xib */; };
+		A1CB98361541B83600A67352 /* startup.murlpkg in Resources */ = {isa = PBXBuildFile; fileRef = A1FD634F14BDC4EA008C3C6F /* startup.murlpkg */; };
+		A1CB98501541B83600A67352 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12363CA1260C38C007D4C25 /* AudioToolbox.framework */; };
+		A1CB98511541B83600A67352 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638814BDC5A1008C3C6F /* CoreGraphics.framework */; };
+		A1CB98521541B83600A67352 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A102D1F112606649001DD29B /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A1CB98531541B83600A67352 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638A14BDC5B4008C3C6F /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A1CB98541541B83600A67352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		A1CB98561541B83600A67352 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638E14BDC5D0008C3C6F /* MessageUI.framework */; };
+		A1CB98571541B83600A67352 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B79FE5812B27B2800EF7D9E /* OpenAL.framework */; };
+		A1CB98581541B83600A67352 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		A1CB98591541B83600A67352 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		A1CB985B1541B83600A67352 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		A1F34CF315F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F34CF115F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib */; };
+		A1F34CF415F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F34CF115F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib */; };
+		A1F34CF515F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F34CF215F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib */; };
+		A1F34CF615F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F34CF215F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib */; };
+		A1FD638914BDC5A1008C3C6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638814BDC5A1008C3C6F /* CoreGraphics.framework */; };
+		A1FD638B14BDC5B4008C3C6F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638A14BDC5B4008C3C6F /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A1FD638F14BDC5D0008C3C6F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FD638E14BDC5D0008C3C6F /* MessageUI.framework */; };
+		A1FD646414BDCA57008C3C6F /* startup.murlpkg in Resources */ = {isa = PBXBuildFile; fileRef = A1FD634F14BDC4EA008C3C6F /* startup.murlpkg */; };
+		F910104117F47AE400E65E92 /* pbr_project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F910104017F47AE400E65E92 /* pbr_project.cpp */; };
+		F910104317F47B1C00E65E92 /* main.murlres in Resources */ = {isa = PBXBuildFile; fileRef = F910104217F47B1C00E65E92 /* main.murlres */; };
+		F99AB43717F47CFF00D1D3BC /* main.murlpkg in Resources */ = {isa = PBXBuildFile; fileRef = F99AB43617F47CFF00D1D3BC /* main.murlpkg */; };
+		F99AB43C17F47E8000D1D3BC /* pbr_project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F910104017F47AE400E65E92 /* pbr_project.cpp */; };
+		F99AB43E17F47EE800D1D3BC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99AB43D17F47EE800D1D3BC /* GameKit.framework */; };
+		F99AB44017F47EEA00D1D3BC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99AB43F17F47EEA00D1D3BC /* StoreKit.framework */; };
+		F99AB44117F47F0900D1D3BC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99AB43D17F47EE800D1D3BC /* GameKit.framework */; };
+		F99AB44217F47F0A00D1D3BC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99AB43F17F47EEA00D1D3BC /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6B0B277D129EFFA00041A36A /* PbrProjectDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PbrProjectDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B79FE5812B27B2800EF7D9E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A100FB5816CD235D00C55C5E /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = source; sourceTree = "<group>"; };
+		A100FB5916CD239C00C55C5E /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		A100FB5A16CD23BF00C55C5E /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		A100FB5B16CD23C000C55C5E /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; path = license; sourceTree = "<group>"; };
+		A100FB5C16CD23C000C55C5E /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = source; sourceTree = "<group>"; };
+		A102D1F112606649001DD29B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A115B41E1BD4F5A200467147 /* murl.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = murl.entitlements; sourceTree = "<group>"; };
+		A115B4201BD4F5CC00467147 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A115B4221BD4F5D200467147 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		A12363CA1260C38C007D4C25 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A13519F815C14B6E00E544C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A13519FA15C14B7E00E544C2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A147206716A16382006B4373 /* libmurl_3rd_party.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_3rd_party.a; path = "ios/Release-iphoneos/libmurl_3rd_party.a"; sourceTree = "<group>"; };
+		A15F485416C9340400D6F824 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		A15F485516C9340400D6F824 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		A15F485616C9340400D6F824 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		A15F485716C9340400D6F824 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		A15F485816C9340400D6F824 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A15F485916C9340400D6F824 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A15F485A16C9340400D6F824 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		A15F485B16C9340400D6F824 /* murl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "murl-Info.plist"; sourceTree = "<group>"; };
+		A15F485C16C9340400D6F824 /* MurlLaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MurlLaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		A15F485D16C9340400D6F824 /* MurlLaunchImage-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MurlLaunchImage-Landscape.png"; sourceTree = "<group>"; };
+		A15F485E16C9340400D6F824 /* MurlLaunchImage-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MurlLaunchImage-Portrait.png"; sourceTree = "<group>"; };
+		A15F485F16C9340400D6F824 /* MurlLaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MurlLaunchImage.png; sourceTree = "<group>"; };
+		A15F486016C9340400D6F824 /* MurlLaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MurlLaunchImage@2x.png"; sourceTree = "<group>"; };
+		A15F487B16C934CE00D6F824 /* libmurl_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_engine.a; path = "ios/Release-iphoneos/libmurl_engine.a"; sourceTree = "<group>"; };
+		A15F487C16C934CE00D6F824 /* libmurl_platform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_platform.a; path = "ios/Release-iphoneos/libmurl_platform.a"; sourceTree = "<group>"; };
+		A15F488116C9353E00D6F824 /* pbr_project_app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project_app.cpp; sourceTree = "<group>"; };
+		A15F488216C9353E00D6F824 /* pbr_project_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbr_project_app.h; sourceTree = "<group>"; };
+		A15F488516C9353E00D6F824 /* pbr_project_logic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project_logic.cpp; sourceTree = "<group>"; };
+		A15F488616C9353E00D6F824 /* pbr_project_logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbr_project_logic.h; sourceTree = "<group>"; };
+		A15F488F16C951B500D6F824 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		A170A18D16D6984300BA4ED0 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		A17825711802FE2200D77389 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A17825721802FE2200D77389 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A17825731802FE2200D77389 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A17825741802FE2200D77389 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		A17825751802FE2200D77389 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A192CDB3181A946000A34273 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A192CDB5181A947700A34273 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		A192CDB6181A947700A34273 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../../murl/3rd_party/include/facebook/ios/FacebookSDK.framework; sourceTree = "<group>"; };
+		A192CDB8181A947700A34273 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A192CDB9181A947700A34273 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		A1B996641C1868090052ED18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1B996651C1868090052ED18 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		A1CB985F1541B83600A67352 /* PbrProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PbrProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F34CF115F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "murl_platform_ios_uikit_main_window-iPad.xib"; path = "base/source/platform/ios/uikit/murl_platform_ios_uikit_main_window-iPad.xib"; sourceTree = "<group>"; };
+		A1F34CF215F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = murl_platform_ios_uikit_main_window.xib; path = base/source/platform/ios/uikit/murl_platform_ios_uikit_main_window.xib; sourceTree = "<group>"; };
+		A1FD634F14BDC4EA008C3C6F /* startup.murlpkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = startup.murlpkg; sourceTree = "<group>"; };
+		A1FD638814BDC5A1008C3C6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1FD638A14BDC5B4008C3C6F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A1FD638E14BDC5D0008C3C6F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E37389F9FDCFA39411CA2CEA /* documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = documents; sourceTree = "<group>"; };
+		F910104017F47AE400E65E92 /* pbr_project.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project.cpp; sourceTree = "<group>"; };
+		F910104217F47B1C00E65E92 /* main.murlres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = main.murlres; sourceTree = "<group>"; };
+		F99AB43617F47CFF00D1D3BC /* main.murlpkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.murlpkg; sourceTree = "<group>"; };
+		F99AB43D17F47EE800D1D3BC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		F99AB43F17F47EEA00D1D3BC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B0B277B129EFFA00041A36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A147206816A16476006B4373 /* libmurl_3rd_party.a in Frameworks */,
+				A15F487D16C934CE00D6F824 /* libmurl_engine.a in Frameworks */,
+				A15F487F16C934CE00D6F824 /* libmurl_platform.a in Frameworks */,
+				A17825761802FE2200D77389 /* AdSupport.framework in Frameworks */,
+				A148C36D12A6C611009BADBF /* AudioToolbox.framework in Frameworks */,
+				A17825781802FE2200D77389 /* AVFoundation.framework in Frameworks */,
+				A115B4211BD4F5CC00467147 /* CloudKit.framework in Frameworks */,
+				A1FD638914BDC5A1008C3C6F /* CoreGraphics.framework in Frameworks */,
+				A13519FD15C14C3200E544C2 /* CoreLocation.framework in Frameworks */,
+				A178257A1802FE2200D77389 /* CoreMedia.framework in Frameworks */,
+				A148C36B12A6C611009BADBF /* CoreMotion.framework in Frameworks */,
+				A13519FE15C14C3600E544C2 /* CoreTelephony.framework in Frameworks */,
+				A1FD638B14BDC5B4008C3C6F /* CoreText.framework in Frameworks */,
+				A178257C1802FE2200D77389 /* CoreVideo.framework in Frameworks */,
+				A148C37012A6C611009BADBF /* Foundation.framework in Frameworks */,
+				A115B4231BD4F5D200467147 /* GameController.framework in Frameworks */,
+				F99AB43E17F47EE800D1D3BC /* GameKit.framework in Frameworks */,
+				A178257E1802FE2200D77389 /* MediaPlayer.framework in Frameworks */,
+				A1FD638F14BDC5D0008C3C6F /* MessageUI.framework in Frameworks */,
+				6B79FE6212B27B3000EF7D9E /* OpenAL.framework in Frameworks */,
+				A148C36E12A6C611009BADBF /* OpenGLES.framework in Frameworks */,
+				A148C36C12A6C611009BADBF /* QuartzCore.framework in Frameworks */,
+				F99AB44017F47EEA00D1D3BC /* StoreKit.framework in Frameworks */,
+				A148C36F12A6C611009BADBF /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CB984C1541B83600A67352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A147206916A16476006B4373 /* libmurl_3rd_party.a in Frameworks */,
+				A15F487E16C934CE00D6F824 /* libmurl_engine.a in Frameworks */,
+				A15F488016C934CE00D6F824 /* libmurl_platform.a in Frameworks */,
+				A17825771802FE2200D77389 /* AdSupport.framework in Frameworks */,
+				A1CB98501541B83600A67352 /* AudioToolbox.framework in Frameworks */,
+				A17825791802FE2200D77389 /* AVFoundation.framework in Frameworks */,
+				A115B4251BD4F5DD00467147 /* CloudKit.framework in Frameworks */,
+				A1CB98511541B83600A67352 /* CoreGraphics.framework in Frameworks */,
+				A13519F915C14B6E00E544C2 /* CoreLocation.framework in Frameworks */,
+				A178257B1802FE2200D77389 /* CoreMedia.framework in Frameworks */,
+				A1CB98521541B83600A67352 /* CoreMotion.framework in Frameworks */,
+				A13519FB15C14B7E00E544C2 /* CoreTelephony.framework in Frameworks */,
+				A1CB98531541B83600A67352 /* CoreText.framework in Frameworks */,
+				A178257D1802FE2200D77389 /* CoreVideo.framework in Frameworks */,
+				A1CB98541541B83600A67352 /* Foundation.framework in Frameworks */,
+				A115B4241BD4F5D700467147 /* GameController.framework in Frameworks */,
+				F99AB44117F47F0900D1D3BC /* GameKit.framework in Frameworks */,
+				A178257F1802FE2200D77389 /* MediaPlayer.framework in Frameworks */,
+				A1CB98561541B83600A67352 /* MessageUI.framework in Frameworks */,
+				A1CB98571541B83600A67352 /* OpenAL.framework in Frameworks */,
+				A1CB98581541B83600A67352 /* OpenGLES.framework in Frameworks */,
+				A1CB98591541B83600A67352 /* QuartzCore.framework in Frameworks */,
+				F99AB44217F47F0A00D1D3BC /* StoreKit.framework in Frameworks */,
+				A1CB985B1541B83600A67352 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B97314FDCFA39411CA2CEA /* CustomPbrProject */ = {
+			isa = PBXGroup;
+			children = (
+				6BDDE8801305E801008E65F0 /* pbr_project */,
+				A1546DCE125A05AA00B92CBA /* external */,
+			);
+			name = CustomPbrProject;
+			sourceTree = "<group>";
+		};
+		6B06AF2B1306E3BA0000D19D /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				A1FD634F14BDC4EA008C3C6F /* startup.murlpkg */,
+				F99AB43617F47CFF00D1D3BC /* main.murlpkg */,
+				F910104217F47B1C00E65E92 /* main.murlres */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		6BDDE8801305E801008E65F0 /* pbr_project */ = {
+			isa = PBXGroup;
+			children = (
+				6BDDE8811305E812008E65F0 /* binaries */,
+				6BDDE8891305E84E008E65F0 /* data */,
+				E37389F9FDCFA39411CA2CEA /* documents */,
+				6BDDE88E1305E85B008E65F0 /* resources */,
+				A170A18D16D6984300BA4ED0 /* scripts */,
+				6BDDE88F1305E860008E65F0 /* source */,
+			);
+			name = pbr_project;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		6BDDE8811305E812008E65F0 /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				6B0B277D129EFFA00041A36A /* PbrProjectDev.app */,
+				A1CB985F1541B83600A67352 /* PbrProject.app */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		6BDDE8891305E84E008E65F0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				6B06AF2B1306E3BA0000D19D /* packages */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		6BDDE88E1305E85B008E65F0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BDDE8B81305E8D9008E65F0 /* ios */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6BDDE88F1305E860008E65F0 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F910104017F47AE400E65E92 /* pbr_project.cpp */,
+				A15F488116C9353E00D6F824 /* pbr_project_app.cpp */,
+				A15F488216C9353E00D6F824 /* pbr_project_app.h */,
+				A15F488516C9353E00D6F824 /* pbr_project_logic.cpp */,
+				A15F488616C9353E00D6F824 /* pbr_project_logic.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		6BDDE8B81305E8D9008E65F0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A15F485416C9340400D6F824 /* Icon-72.png */,
+				A15F485516C9340400D6F824 /* Icon-Small-50.png */,
+				A15F485616C9340400D6F824 /* Icon-Small.png */,
+				A15F485716C9340400D6F824 /* Icon-Small@2x.png */,
+				A15F485816C9340400D6F824 /* Icon.png */,
+				A15F485916C9340400D6F824 /* Icon@2x.png */,
+				A1B996641C1868090052ED18 /* Images.xcassets */,
+				A15F485A16C9340400D6F824 /* iTunesArtwork */,
+				A1B996651C1868090052ED18 /* LaunchScreen.xib */,
+				A15F485B16C9340400D6F824 /* murl-Info.plist */,
+				A115B41E1BD4F5A200467147 /* murl.entitlements */,
+				A15F485C16C9340400D6F824 /* MurlLaunchImage-568h@2x.png */,
+				A15F485D16C9340400D6F824 /* MurlLaunchImage-Landscape.png */,
+				A15F485E16C9340400D6F824 /* MurlLaunchImage-Portrait.png */,
+				A15F485F16C9340400D6F824 /* MurlLaunchImage.png */,
+				A15F486016C9340400D6F824 /* MurlLaunchImage@2x.png */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		A100FB5316CD228F00C55C5E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A17825711802FE2200D77389 /* AdSupport.framework */,
+				A12363CA1260C38C007D4C25 /* AudioToolbox.framework */,
+				A17825721802FE2200D77389 /* AVFoundation.framework */,
+				A115B4201BD4F5CC00467147 /* CloudKit.framework */,
+				A1FD638814BDC5A1008C3C6F /* CoreGraphics.framework */,
+				A13519F815C14B6E00E544C2 /* CoreLocation.framework */,
+				A17825731802FE2200D77389 /* CoreMedia.framework */,
+				A102D1F112606649001DD29B /* CoreMotion.framework */,
+				A13519FA15C14B7E00E544C2 /* CoreTelephony.framework */,
+				A1FD638A14BDC5B4008C3C6F /* CoreText.framework */,
+				A17825741802FE2200D77389 /* CoreVideo.framework */,
+				A192CDB4181A946700A34273 /* facebook */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				A115B4221BD4F5D200467147 /* GameController.framework */,
+				F99AB43D17F47EE800D1D3BC /* GameKit.framework */,
+				A17825751802FE2200D77389 /* MediaPlayer.framework */,
+				A1FD638E14BDC5D0008C3C6F /* MessageUI.framework */,
+				6B79FE5812B27B2800EF7D9E /* OpenAL.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				F99AB43F17F47EEA00D1D3BC /* StoreKit.framework */,
+				A192CDB3181A946000A34273 /* SystemConfiguration.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+			);
+			name = ios;
+			sourceTree = "<group>";
+		};
+		A100FB5416CD22CA00C55C5E /* base */ = {
+			isa = PBXGroup;
+			children = (
+				A100FB5616CD230100C55C5E /* binaries */,
+				A15F488F16C951B500D6F824 /* include */,
+				A100FB5816CD235D00C55C5E /* source */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		A100FB5516CD22CE00C55C5E /* 3rd_party */ = {
+			isa = PBXGroup;
+			children = (
+				A100FB5716CD230800C55C5E /* binaries */,
+				A100FB5A16CD23BF00C55C5E /* include */,
+				A100FB5B16CD23C000C55C5E /* license */,
+				A100FB5C16CD23C000C55C5E /* source */,
+			);
+			path = 3rd_party;
+			sourceTree = "<group>";
+		};
+		A100FB5616CD230100C55C5E /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				A15F487B16C934CE00D6F824 /* libmurl_engine.a */,
+				A15F487C16C934CE00D6F824 /* libmurl_platform.a */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		A100FB5716CD230800C55C5E /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				A147206716A16382006B4373 /* libmurl_3rd_party.a */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		A1546DCE125A05AA00B92CBA /* external */ = {
+			isa = PBXGroup;
+			children = (
+				A15F488E16C951A300D6F824 /* murl */,
+				A100FB5316CD228F00C55C5E /* ios */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		A15F488E16C951A300D6F824 /* murl */ = {
+			isa = PBXGroup;
+			children = (
+				A100FB5516CD22CE00C55C5E /* 3rd_party */,
+				A100FB5416CD22CA00C55C5E /* base */,
+				A100FB5916CD239C00C55C5E /* License.txt */,
+				A1F34CF115F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib */,
+				A1F34CF215F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib */,
+			);
+			name = murl;
+			path = ../../../../../../murl;
+			sourceTree = "<group>";
+		};
+		A192CDB4181A946700A34273 /* facebook */ = {
+			isa = PBXGroup;
+			children = (
+				A192CDB5181A947700A34273 /* Accounts.framework */,
+				A192CDB6181A947700A34273 /* FacebookSDK.framework */,
+				A192CDB8181A947700A34273 /* Security.framework */,
+				A192CDB9181A947700A34273 /* Social.framework */,
+			);
+			name = facebook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B0B277C129EFFA00041A36A /* PbrProjectDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B0B2782129EFFA10041A36A /* Build configuration list for PBXNativeTarget "PbrProjectDev" */;
+			buildPhases = (
+				6B0B2779129EFFA00041A36A /* Resources */,
+				6B0B277A129EFFA00041A36A /* Sources */,
+				6B0B277B129EFFA00041A36A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PbrProjectDev;
+			productName = pbr_project;
+			productReference = 6B0B277D129EFFA00041A36A /* PbrProjectDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1CB98211541B83600A67352 /* PbrProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CB985C1541B83600A67352 /* Build configuration list for PBXNativeTarget "PbrProject" */;
+			buildPhases = (
+				A1CB98621541B8E200A67352 /* ShellScript */,
+				A1CB98281541B83600A67352 /* Resources */,
+				A1CB983C1541B83600A67352 /* Sources */,
+				A1CB984C1541B83600A67352 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PbrProject;
+			productName = pbr_project;
+			productReference = A1CB985F1541B83600A67352 /* PbrProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Spraylight;
+				TargetAttributes = {
+					6B0B277C129EFFA00041A36A = {
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					A1CB98211541B83600A67352 = {
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "pbr_project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				fr,
+				de,
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomPbrProject */;
+			productRefGroup = 29B97314FDCFA39411CA2CEA /* CustomPbrProject */;
+			projectDirPath = "";
+			projectRoot = ../../../../..;
+			targets = (
+				6B0B277C129EFFA00041A36A /* PbrProjectDev */,
+				A1CB98211541B83600A67352 /* PbrProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B0B2779129EFFA00041A36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FD646414BDCA57008C3C6F /* startup.murlpkg in Resources */,
+				A1F34CF315F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib in Resources */,
+				A1F34CF515F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib in Resources */,
+				A15F486116C9340400D6F824 /* Icon-72.png in Resources */,
+				A15F486316C9340400D6F824 /* Icon-Small-50.png in Resources */,
+				A15F486516C9340400D6F824 /* Icon-Small.png in Resources */,
+				A15F486716C9340400D6F824 /* Icon-Small@2x.png in Resources */,
+				A15F486916C9340400D6F824 /* Icon.png in Resources */,
+				F910104317F47B1C00E65E92 /* main.murlres in Resources */,
+				A15F486B16C9340400D6F824 /* Icon@2x.png in Resources */,
+				A15F486D16C9340400D6F824 /* iTunesArtwork in Resources */,
+				A1B996661C1868090052ED18 /* Images.xcassets in Resources */,
+				A15F487116C9340400D6F824 /* MurlLaunchImage-568h@2x.png in Resources */,
+				A15F487316C9340400D6F824 /* MurlLaunchImage-Landscape.png in Resources */,
+				A15F487516C9340400D6F824 /* MurlLaunchImage-Portrait.png in Resources */,
+				A15F487716C9340400D6F824 /* MurlLaunchImage.png in Resources */,
+				A1B996681C1868090052ED18 /* LaunchScreen.xib in Resources */,
+				A15F487916C9340400D6F824 /* MurlLaunchImage@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CB98281541B83600A67352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CB98361541B83600A67352 /* startup.murlpkg in Resources */,
+				F99AB43717F47CFF00D1D3BC /* main.murlpkg in Resources */,
+				A1F34CF415F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window-iPad.xib in Resources */,
+				A1F34CF615F8B0EA00C27C25 /* murl_platform_ios_uikit_main_window.xib in Resources */,
+				A15F486216C9340400D6F824 /* Icon-72.png in Resources */,
+				A15F486416C9340400D6F824 /* Icon-Small-50.png in Resources */,
+				A15F486616C9340400D6F824 /* Icon-Small.png in Resources */,
+				A15F486816C9340400D6F824 /* Icon-Small@2x.png in Resources */,
+				A15F486A16C9340400D6F824 /* Icon.png in Resources */,
+				A15F486C16C9340400D6F824 /* Icon@2x.png in Resources */,
+				A15F486E16C9340400D6F824 /* iTunesArtwork in Resources */,
+				A1B996671C1868090052ED18 /* Images.xcassets in Resources */,
+				A15F487216C9340400D6F824 /* MurlLaunchImage-568h@2x.png in Resources */,
+				A15F487416C9340400D6F824 /* MurlLaunchImage-Landscape.png in Resources */,
+				A15F487616C9340400D6F824 /* MurlLaunchImage-Portrait.png in Resources */,
+				A15F487816C9340400D6F824 /* MurlLaunchImage.png in Resources */,
+				A1B996691C1868090052ED18 /* LaunchScreen.xib in Resources */,
+				A15F487A16C9340400D6F824 /* MurlLaunchImage@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1CB98621541B8E200A67352 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ../../../scripts\n./pack_resources.sh\npopd";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B0B277A129EFFA00041A36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15F488716C9353F00D6F824 /* pbr_project_app.cpp in Sources */,
+				F910104117F47AE400E65E92 /* pbr_project.cpp in Sources */,
+				A15F488B16C9353F00D6F824 /* pbr_project_logic.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CB983C1541B83600A67352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15F488816C9353F00D6F824 /* pbr_project_app.cpp in Sources */,
+				F99AB43C17F47E8000D1D3BC /* pbr_project.cpp in Sources */,
+				A15F488C16C9353F00D6F824 /* pbr_project_logic.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B0B2780129EFFA10041A36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = PbrProjectDev;
+			};
+			name = Debug;
+		};
+		6B0B2781129EFFA10041A36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = PbrProjectDev;
+			};
+			name = Release;
+		};
+		A1CB985D1541B83600A67352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = PbrProject;
+			};
+			name = Debug;
+		};
+		A1CB985E1541B83600A67352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = PbrProject;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = ../../../resources/ios/murl.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../../../murl/base/include/addons/**",
+					"../../../../../../murl/base/include/app/**",
+					"../../../../../../murl/base/include/engine/**",
+					"../../../../../../murl/base/include/platform/**",
+				);
+				INFOPLIST_FILE = "../../../resources/ios/murl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../../../murl/3rd_party/binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../../../../../../murl/base/binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.spraylight.${PRODUCT_NAME:rfc1034identifier}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = ../../../resources/ios/murl.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				CONFIGURATION_BUILD_DIR = "../../../binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../../../murl/base/include/addons/**",
+					"../../../../../../murl/base/include/app/**",
+					"../../../../../../murl/base/include/engine/**",
+					"../../../../../../murl/base/include/platform/**",
+				);
+				INFOPLIST_FILE = "../../../resources/ios/murl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../../../murl/3rd_party/binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../../../../../../murl/base/binaries/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "at.spraylight.${PRODUCT_NAME:rfc1034identifier}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B0B2782129EFFA10041A36A /* Build configuration list for PBXNativeTarget "PbrProjectDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B0B2780129EFFA10041A36A /* Debug */,
+				6B0B2781129EFFA10041A36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CB985C1541B83600A67352 /* Build configuration list for PBXNativeTarget "PbrProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CB985D1541B83600A67352 /* Debug */,
+				A1CB985E1541B83600A67352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "pbr_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

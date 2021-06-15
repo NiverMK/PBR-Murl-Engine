@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B7B006716CBD800002DAFCA /* murl_platform_osx_cocoa_main_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B000116CBD31C002DAFCA /* murl_platform_osx_cocoa_main_window.xib */; };
+		6B7B006D16CBD800002DAFCA /* libmurl_3rd_party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B003816CBD6DD002DAFCA /* libmurl_3rd_party.a */; };
+		6B7B006E16CBD800002DAFCA /* libmurl_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7BFFFD16CBD2C3002DAFCA /* libmurl_engine.a */; };
+		6B7B006F16CBD800002DAFCA /* libmurl_platform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7BFFFE16CBD2C3002DAFCA /* libmurl_platform.a */; };
+		6B7B007116CBD800002DAFCA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB9843B123561A500C49502 /* AppKit.framework */; };
+		6B7B007216CBD800002DAFCA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A179ED62144DB6B700CEA1A5 /* Carbon.framework */; };
+		6B7B007416CBD800002DAFCA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B002D16CBD549002DAFCA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6B7B007516CBD800002DAFCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB98441123561C300C49502 /* Foundation.framework */; };
+		6B7B007616CBD800002DAFCA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B002F16CBD554002DAFCA /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6B7B007716CBD800002DAFCA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B79FC8812B27A9D00EF7D9E /* OpenAL.framework */; };
+		6B7B007816CBD800002DAFCA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B727FA6117CCB76007A5D0B /* OpenGL.framework */; };
+		6B7B007916CBD800002DAFCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14971C11292C87B00C79910 /* QuartzCore.framework */; };
+		6B7B007A16CBD800002DAFCA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CBA46313FC67E800FBA2F5 /* Security.framework */; };
+		6B7B007B16CBD800002DAFCA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B003116CBD567002DAFCA /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8678A8F0245C667B0021F695 /* logic_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8678A8ED245C667B0021F695 /* logic_camera.cpp */; };
+		8678A8F1245C667B0021F695 /* logic_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8678A8ED245C667B0021F695 /* logic_camera.cpp */; };
+		8678A8F2245C667B0021F695 /* logic_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8678A8EF245C667B0021F695 /* logic_ui.cpp */; };
+		8678A8F3245C667B0021F695 /* logic_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8678A8EF245C667B0021F695 /* logic_ui.cpp */; };
+		A102FD08181961B200ADA5F7 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = A102FD07181961B200ADA5F7 /* Icon.iconset */; };
+		A102FD09181961B200ADA5F7 /* Icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = A102FD07181961B200ADA5F7 /* Icon.iconset */; };
+		A115B40C1BD4F26E00467147 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B40B1BD4F26E00467147 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B40E1BD4F27800467147 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B40D1BD4F27800467147 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B40F1BD4F28100467147 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B40B1BD4F26E00467147 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A115B4101BD4F28700467147 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A115B40D1BD4F27800467147 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A17824961802FAB300D77389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17824941802FAB300D77389 /* AVFoundation.framework */; };
+		A17824971802FAB300D77389 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17824941802FAB300D77389 /* AVFoundation.framework */; };
+		A17824981802FAB300D77389 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17824951802FAB300D77389 /* CoreMedia.framework */; };
+		A17824991802FAB300D77389 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17824951802FAB300D77389 /* CoreMedia.framework */; };
+		F90F635A17F5A2CC00D4A54D /* main.murlpkg in Resources */ = {isa = PBXBuildFile; fileRef = F90F635917F5A2CC00D4A54D /* main.murlpkg */; };
+		F941EEE417F5A17700DC0760 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A135D4B71549A3EB0002F72C /* IOKit.framework */; };
+		F9753E9917733C7A00FD1A72 /* pbr_project_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9417733C7A00FD1A72 /* pbr_project_app.cpp */; };
+		F9753E9A17733C7A00FD1A72 /* pbr_project_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9617733C7A00FD1A72 /* pbr_project_logic.cpp */; };
+		F9753E9B17733C7A00FD1A72 /* pbr_project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9817733C7A00FD1A72 /* pbr_project.cpp */; };
+		F9753EA217733CB400FD1A72 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F9753E9F17733CB400FD1A72 /* Credits.rtf */; };
+		F9753EA917733CF000FD1A72 /* startup.murlpkg in Resources */ = {isa = PBXBuildFile; fileRef = F9753EA817733CF000FD1A72 /* startup.murlpkg */; };
+		F99A316617F59C95007DD12B /* murl_platform_osx_cocoa_main_window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7B000116CBD31C002DAFCA /* murl_platform_osx_cocoa_main_window.xib */; };
+		F99A316717F59C95007DD12B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F9753E9F17733CB400FD1A72 /* Credits.rtf */; };
+		F99A316C17F59C95007DD12B /* pbr_project_app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9417733C7A00FD1A72 /* pbr_project_app.cpp */; };
+		F99A316D17F59C95007DD12B /* pbr_project_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9617733C7A00FD1A72 /* pbr_project_logic.cpp */; };
+		F99A316E17F59C95007DD12B /* pbr_project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9753E9817733C7A00FD1A72 /* pbr_project.cpp */; };
+		F99A317017F59C95007DD12B /* libmurl_3rd_party.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B003816CBD6DD002DAFCA /* libmurl_3rd_party.a */; };
+		F99A317117F59C95007DD12B /* libmurl_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7BFFFD16CBD2C3002DAFCA /* libmurl_engine.a */; };
+		F99A317217F59C95007DD12B /* libmurl_platform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7BFFFE16CBD2C3002DAFCA /* libmurl_platform.a */; };
+		F99A317417F59C95007DD12B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB9843B123561A500C49502 /* AppKit.framework */; };
+		F99A317517F59C95007DD12B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A179ED62144DB6B700CEA1A5 /* Carbon.framework */; };
+		F99A317617F59C95007DD12B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B002D16CBD549002DAFCA /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F99A317717F59C95007DD12B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB98441123561C300C49502 /* Foundation.framework */; };
+		F99A317817F59C95007DD12B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B002F16CBD554002DAFCA /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F99A317917F59C95007DD12B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B79FC8812B27A9D00EF7D9E /* OpenAL.framework */; };
+		F99A317A17F59C95007DD12B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B727FA6117CCB76007A5D0B /* OpenGL.framework */; };
+		F99A317B17F59C95007DD12B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14971C11292C87B00C79910 /* QuartzCore.framework */; };
+		F99A317C17F59C95007DD12B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1CBA46313FC67E800FBA2F5 /* Security.framework */; };
+		F99A317D17F59C95007DD12B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7B003116CBD567002DAFCA /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F99A318317F59F40007DD12B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A135D4B71549A3EB0002F72C /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B46AC941551653C0087059B /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		6B46AC951551653C0087059B /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = source; sourceTree = "<group>"; };
+		6B727FA6117CCB76007A5D0B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		6B79FC8812B27A9D00EF7D9E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		6B7B000116CBD31C002DAFCA /* murl_platform_osx_cocoa_main_window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = murl_platform_osx_cocoa_main_window.xib; path = base/source/platform/osx/cocoa/murl_platform_osx_cocoa_main_window.xib; sourceTree = "<group>"; };
+		6B7B002D16CBD549002DAFCA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6B7B002F16CBD554002DAFCA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		6B7B003116CBD567002DAFCA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6B7B003816CBD6DD002DAFCA /* libmurl_3rd_party.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_3rd_party.a; path = osx/Release/libmurl_3rd_party.a; sourceTree = "<group>"; };
+		6B7B003B16CBD71B002DAFCA /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		6B7B003C16CBD71B002DAFCA /* source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = source; sourceTree = "<group>"; };
+		6B7BFFFD16CBD2C3002DAFCA /* libmurl_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_engine.a; path = osx/Release/libmurl_engine.a; sourceTree = "<group>"; };
+		6B7BFFFE16CBD2C3002DAFCA /* libmurl_platform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmurl_platform.a; path = osx/Release/libmurl_platform.a; sourceTree = "<group>"; };
+		6BA28B3016CCFDAD000284E2 /* PbrProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PbrProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB26AE316D2282B002723DF /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; path = license; sourceTree = "<group>"; };
+		6BB26AE416D2283B002723DF /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		6BB9843B123561A500C49502 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6BB98441123561C300C49502 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8678A8EC245C667B0021F695 /* logic_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logic_ui.h; sourceTree = "<group>"; };
+		8678A8ED245C667B0021F695 /* logic_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logic_camera.cpp; sourceTree = "<group>"; };
+		8678A8EE245C667B0021F695 /* logic_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logic_camera.h; sourceTree = "<group>"; };
+		8678A8EF245C667B0021F695 /* logic_ui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logic_ui.cpp; sourceTree = "<group>"; };
+		90158D7EFE84155DC02AAC07 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		A102FD07181961B200ADA5F7 /* Icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Icon.iconset; sourceTree = "<group>"; };
+		A115B40B1BD4F26E00467147 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A115B40D1BD4F27800467147 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		A115B4151BD4F37600467147 /* murl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = murl.entitlements; sourceTree = "<group>"; };
+		A135D4B71549A3EB0002F72C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A14971C11292C87B00C79910 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A17824941802FAB300D77389 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A17824951802FAB300D77389 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A179ED62144DB6B700CEA1A5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A192CDAF181A921800A34273 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A192CDB0181A921800A34273 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		A192CDB1181A922400A34273 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		A1CBA46313FC67E800FBA2F5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F90F635917F5A2CC00D4A54D /* main.murlpkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.murlpkg; sourceTree = "<group>"; };
+		F94A1E0E1774802800D638B4 /* documents */ = {isa = PBXFileReference; lastKnownFileType = folder; path = documents; sourceTree = "<group>"; };
+		F9753E9417733C7A00FD1A72 /* pbr_project_app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project_app.cpp; sourceTree = "<group>"; };
+		F9753E9517733C7A00FD1A72 /* pbr_project_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbr_project_app.h; sourceTree = "<group>"; };
+		F9753E9617733C7A00FD1A72 /* pbr_project_logic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project_logic.cpp; sourceTree = "<group>"; };
+		F9753E9717733C7A00FD1A72 /* pbr_project_logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbr_project_logic.h; sourceTree = "<group>"; };
+		F9753E9817733C7A00FD1A72 /* pbr_project.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pbr_project.cpp; sourceTree = "<group>"; };
+		F9753E9F17733CB400FD1A72 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		F9753EA117733CB400FD1A72 /* murl-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "murl-Info.plist"; sourceTree = "<group>"; };
+		F9753EA617733CE700FD1A72 /* main.murlres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = main.murlres; sourceTree = "<group>"; };
+		F9753EA817733CF000FD1A72 /* startup.murlpkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = startup.murlpkg; sourceTree = "<group>"; };
+		F99A318117F59C95007DD12B /* PbrProjectDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PbrProjectDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B7B006C16CBD800002DAFCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7B006D16CBD800002DAFCA /* libmurl_3rd_party.a in Frameworks */,
+				6B7B006E16CBD800002DAFCA /* libmurl_engine.a in Frameworks */,
+				6B7B006F16CBD800002DAFCA /* libmurl_platform.a in Frameworks */,
+				6B7B007116CBD800002DAFCA /* AppKit.framework in Frameworks */,
+				A17824961802FAB300D77389 /* AVFoundation.framework in Frameworks */,
+				6B7B007216CBD800002DAFCA /* Carbon.framework in Frameworks */,
+				A115B40C1BD4F26E00467147 /* CloudKit.framework in Frameworks */,
+				6B7B007416CBD800002DAFCA /* CoreLocation.framework in Frameworks */,
+				A17824981802FAB300D77389 /* CoreMedia.framework in Frameworks */,
+				6B7B007516CBD800002DAFCA /* Foundation.framework in Frameworks */,
+				A115B40E1BD4F27800467147 /* GameController.framework in Frameworks */,
+				6B7B007616CBD800002DAFCA /* GameKit.framework in Frameworks */,
+				F941EEE417F5A17700DC0760 /* IOKit.framework in Frameworks */,
+				6B7B007716CBD800002DAFCA /* OpenAL.framework in Frameworks */,
+				6B7B007816CBD800002DAFCA /* OpenGL.framework in Frameworks */,
+				6B7B007916CBD800002DAFCA /* QuartzCore.framework in Frameworks */,
+				6B7B007A16CBD800002DAFCA /* Security.framework in Frameworks */,
+				6B7B007B16CBD800002DAFCA /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99A316F17F59C95007DD12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99A317017F59C95007DD12B /* libmurl_3rd_party.a in Frameworks */,
+				F99A317117F59C95007DD12B /* libmurl_engine.a in Frameworks */,
+				F99A317217F59C95007DD12B /* libmurl_platform.a in Frameworks */,
+				F99A317417F59C95007DD12B /* AppKit.framework in Frameworks */,
+				A17824971802FAB300D77389 /* AVFoundation.framework in Frameworks */,
+				F99A317517F59C95007DD12B /* Carbon.framework in Frameworks */,
+				A115B40F1BD4F28100467147 /* CloudKit.framework in Frameworks */,
+				F99A317617F59C95007DD12B /* CoreLocation.framework in Frameworks */,
+				A17824991802FAB300D77389 /* CoreMedia.framework in Frameworks */,
+				F99A317717F59C95007DD12B /* Foundation.framework in Frameworks */,
+				A115B4101BD4F28700467147 /* GameController.framework in Frameworks */,
+				F99A317817F59C95007DD12B /* GameKit.framework in Frameworks */,
+				F99A318317F59F40007DD12B /* IOKit.framework in Frameworks */,
+				F99A317917F59C95007DD12B /* OpenAL.framework in Frameworks */,
+				F99A317A17F59C95007DD12B /* OpenGL.framework in Frameworks */,
+				F99A317B17F59C95007DD12B /* QuartzCore.framework in Frameworks */,
+				F99A317C17F59C95007DD12B /* Security.framework in Frameworks */,
+				F99A317D17F59C95007DD12B /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* motor */ = {
+			isa = PBXGroup;
+			children = (
+				6BDE3DD51305902E000E4B69 /* pbr_project */,
+				6BDE408D1305A3BE000E4B69 /* external */,
+			);
+			name = motor;
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		6B46AC93155165260087059B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B003616CBD6A2002DAFCA /* binaries */,
+				6B46AC941551653C0087059B /* include */,
+				6B46AC951551653C0087059B /* source */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		6B7B003516CBD679002DAFCA /* murl */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B003716CBD6C5002DAFCA /* 3rd_party */,
+				6B46AC93155165260087059B /* base */,
+				6BB26AE416D2283B002723DF /* License.txt */,
+				6B7B000116CBD31C002DAFCA /* murl_platform_osx_cocoa_main_window.xib */,
+			);
+			name = murl;
+			path = ../../../../../../murl;
+			sourceTree = "<group>";
+		};
+		6B7B003616CBD6A2002DAFCA /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				6B7BFFFD16CBD2C3002DAFCA /* libmurl_engine.a */,
+				6B7BFFFE16CBD2C3002DAFCA /* libmurl_platform.a */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		6B7B003716CBD6C5002DAFCA /* 3rd_party */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B003A16CBD6E4002DAFCA /* binaries */,
+				6B7B003B16CBD71B002DAFCA /* include */,
+				6BB26AE316D2282B002723DF /* license */,
+				6B7B003C16CBD71B002DAFCA /* source */,
+			);
+			path = 3rd_party;
+			sourceTree = "<group>";
+		};
+		6B7B003A16CBD6E4002DAFCA /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B003816CBD6DD002DAFCA /* libmurl_3rd_party.a */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		6B7B003D16CBD740002DAFCA /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				6BB9843B123561A500C49502 /* AppKit.framework */,
+				A192CDAF181A921800A34273 /* AudioToolbox.framework */,
+				A192CDB0181A921800A34273 /* AudioUnit.framework */,
+				A17824941802FAB300D77389 /* AVFoundation.framework */,
+				A179ED62144DB6B700CEA1A5 /* Carbon.framework */,
+				A115B40B1BD4F26E00467147 /* CloudKit.framework */,
+				A192CDB1181A922400A34273 /* CoreAudio.framework */,
+				6B7B002D16CBD549002DAFCA /* CoreLocation.framework */,
+				A17824951802FAB300D77389 /* CoreMedia.framework */,
+				6BB98441123561C300C49502 /* Foundation.framework */,
+				A115B40D1BD4F27800467147 /* GameController.framework */,
+				6B7B002F16CBD554002DAFCA /* GameKit.framework */,
+				A135D4B71549A3EB0002F72C /* IOKit.framework */,
+				6B79FC8812B27A9D00EF7D9E /* OpenAL.framework */,
+				6B727FA6117CCB76007A5D0B /* OpenGL.framework */,
+				A14971C11292C87B00C79910 /* QuartzCore.framework */,
+				A1CBA46313FC67E800FBA2F5 /* Security.framework */,
+				6B7B003116CBD567002DAFCA /* StoreKit.framework */,
+			);
+			name = osx;
+			sourceTree = "<group>";
+		};
+		6BDE3DD51305902E000E4B69 /* pbr_project */ = {
+			isa = PBXGroup;
+			children = (
+				6BE08E621306C7EF0039067A /* binaries */,
+				6BE08E691306C82D0039067A /* data */,
+				F94A1E0E1774802800D638B4 /* documents */,
+				A3EBD8C9BBAB52F6C02AAC07 /* resources */,
+				90158D7EFE84155DC02AAC07 /* scripts */,
+				6BE090731306C84B0039067A /* source */,
+			);
+			name = pbr_project;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		6BDE408D1305A3BE000E4B69 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				6B7B003516CBD679002DAFCA /* murl */,
+				6B7B003D16CBD740002DAFCA /* osx */,
+			);
+			name = external;
+			sourceTree = "<group>";
+		};
+		6BE08E621306C7EF0039067A /* binaries */ = {
+			isa = PBXGroup;
+			children = (
+				F99A318117F59C95007DD12B /* PbrProjectDev.app */,
+				6BA28B3016CCFDAD000284E2 /* PbrProject.app */,
+			);
+			path = binaries;
+			sourceTree = "<group>";
+		};
+		6BE08E691306C82D0039067A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F9753EA517733CCE00FD1A72 /* packages */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		6BE090731306C84B0039067A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				F9753E9417733C7A00FD1A72 /* pbr_project_app.cpp */,
+				F9753E9517733C7A00FD1A72 /* pbr_project_app.h */,
+				F9753E9617733C7A00FD1A72 /* pbr_project_logic.cpp */,
+				F9753E9717733C7A00FD1A72 /* pbr_project_logic.h */,
+				F9753E9817733C7A00FD1A72 /* pbr_project.cpp */,
+				8678A8EF245C667B0021F695 /* logic_ui.cpp */,
+				8678A8EC245C667B0021F695 /* logic_ui.h */,
+				8678A8ED245C667B0021F695 /* logic_camera.cpp */,
+				8678A8EE245C667B0021F695 /* logic_camera.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		A3EBD8C9BBAB52F6C02AAC07 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9753E9E17733C9C00FD1A72 /* osx */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F9753E9E17733C9C00FD1A72 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				F9753E9F17733CB400FD1A72 /* Credits.rtf */,
+				A102FD07181961B200ADA5F7 /* Icon.iconset */,
+				F9753EA117733CB400FD1A72 /* murl-Info.plist */,
+				A115B4151BD4F37600467147 /* murl.entitlements */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		F9753EA517733CCE00FD1A72 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				F90F635917F5A2CC00D4A54D /* main.murlpkg */,
+				F9753EA817733CF000FD1A72 /* startup.murlpkg */,
+				F9753EA617733CE700FD1A72 /* main.murlres */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B7B006016CBD800002DAFCA /* PbrProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B7B007C16CBD800002DAFCA /* Build configuration list for PBXNativeTarget "PbrProject" */;
+			buildPhases = (
+				F9B3E66217F5A2710002C310 /* ShellScript */,
+				6B7B006116CBD800002DAFCA /* Resources */,
+				6B7B006816CBD800002DAFCA /* Sources */,
+				6B7B006C16CBD800002DAFCA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PbrProject;
+			productName = pbr_project;
+			productReference = 6BA28B3016CCFDAD000284E2 /* PbrProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F99A316417F59C95007DD12B /* PbrProjectDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99A317E17F59C95007DD12B /* Build configuration list for PBXNativeTarget "PbrProjectDev" */;
+			buildPhases = (
+				F99A316517F59C95007DD12B /* Resources */,
+				F99A316B17F59C95007DD12B /* Sources */,
+				F99A316F17F59C95007DD12B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PbrProjectDev;
+			productName = pbr_project;
+			productReference = F99A318117F59C95007DD12B /* PbrProjectDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Spraylight;
+			};
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "pbr_project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				fr,
+				de,
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* motor */;
+			productRefGroup = 08FB7794FE84155DC02AAC07 /* motor */;
+			projectDirPath = "";
+			projectRoot = ../../../..;
+			targets = (
+				6B7B006016CBD800002DAFCA /* PbrProject */,
+				F99A316417F59C95007DD12B /* PbrProjectDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B7B006116CBD800002DAFCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7B006716CBD800002DAFCA /* murl_platform_osx_cocoa_main_window.xib in Resources */,
+				F9753EA217733CB400FD1A72 /* Credits.rtf in Resources */,
+				F90F635A17F5A2CC00D4A54D /* main.murlpkg in Resources */,
+				A102FD08181961B200ADA5F7 /* Icon.iconset in Resources */,
+				F9753EA917733CF000FD1A72 /* startup.murlpkg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99A316517F59C95007DD12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A102FD09181961B200ADA5F7 /* Icon.iconset in Resources */,
+				F99A316617F59C95007DD12B /* murl_platform_osx_cocoa_main_window.xib in Resources */,
+				F99A316717F59C95007DD12B /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F9B3E66217F5A2710002C310 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd ../../../scripts\n./pack_resources.sh\npopd";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B7B006816CBD800002DAFCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9753E9917733C7A00FD1A72 /* pbr_project_app.cpp in Sources */,
+				F9753E9A17733C7A00FD1A72 /* pbr_project_logic.cpp in Sources */,
+				F9753E9B17733C7A00FD1A72 /* pbr_project.cpp in Sources */,
+				8678A8F2245C667B0021F695 /* logic_ui.cpp in Sources */,
+				8678A8F0245C667B0021F695 /* logic_camera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99A316B17F59C95007DD12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99A316C17F59C95007DD12B /* pbr_project_app.cpp in Sources */,
+				F99A316D17F59C95007DD12B /* pbr_project_logic.cpp in Sources */,
+				F99A316E17F59C95007DD12B /* pbr_project.cpp in Sources */,
+				8678A8F3245C667B0021F695 /* logic_ui.cpp in Sources */,
+				8678A8F1245C667B0021F695 /* logic_camera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = ../../../resources/osx/murl.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "../../../binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../../../murl/base/include/addons/**",
+					"../../../../../../murl/base/include/app/**",
+					"../../../../../../murl/base/include/engine/**",
+					"../../../../../../murl/base/include/platform/**",
+				);
+				INFOPLIST_FILE = "../../../resources/osx/murl-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../../../murl/base/binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../../../../../../murl/3rd_party/binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.spraylight.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CODE_SIGN_ENTITLEMENTS = ../../../resources/osx/murl.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "../../../binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../../../../../murl/base/include/addons/**",
+					"../../../../../../murl/base/include/app/**",
+					"../../../../../../murl/base/include/engine/**",
+					"../../../../../../murl/base/include/platform/**",
+				);
+				INFOPLIST_FILE = "../../../resources/osx/murl-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"../../../../../../murl/base/binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"../../../../../../murl/3rd_party/binaries/osx/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.spraylight.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+			};
+			name = Release;
+		};
+		6B7B007D16CBD800002DAFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PbrProject;
+			};
+			name = Debug;
+		};
+		6B7B007E16CBD800002DAFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PbrProject;
+			};
+			name = Release;
+		};
+		F99A317F17F59C95007DD12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PbrProjectDev;
+			};
+			name = Debug;
+		};
+		F99A318017F59C95007DD12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PbrProjectDev;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "pbr_project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B7B007C16CBD800002DAFCA /* Build configuration list for PBXNativeTarget "PbrProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7B007D16CBD800002DAFCA /* Debug */,
+				6B7B007E16CBD800002DAFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99A317E17F59C95007DD12B /* Build configuration list for PBXNativeTarget "PbrProjectDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99A317F17F59C95007DD12B /* Debug */,
+				F99A318017F59C95007DD12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

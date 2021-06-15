@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 Spraylight GmbH -->
+
+<AtlasGenerator xmlns="http://murlengine.com">
+    <Input path="../data/orig">
+        <Matte color="0i, 0i, 0i"/>
+        <Image names="*"/>
+    </Input>
+
+    <Output path="../data/packages/main.murlres">
+        <Atlas sizeRaster="2"/>
+        <Image name="gfx_my.png" margin="1"/>
+        <PlaneGraphXML name="planes_my.xml"/>
+    </Output>
+</AtlasGenerator>

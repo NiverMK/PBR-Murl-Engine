@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+ 
+<Shader>
+ 
+    <Attributes>
+        <Attribute item="COORD" type="FLOAT_VECTOR_4" precision="HIGH" />
+    </Attributes>
+
+    <Textures>
+        <Texture unit="7" type="CUBE" precision="MEDIUM" name="skyboxTexture"/>
+    </Textures>
+ 
+    <ConstantBuffers>
+        <ConstantBuffer item="MODEL"/>
+        <ConstantBuffer item="CAMERA"/>
+        
+        <ConstantBuffer item="CUSTOM" name="VALUES">
+            <Uniform item="CUSTOM" name="exposure" type="FLOAT" precision="LOW" arraySize="0" value="4.0"/>
+        </ConstantBuffer>
+    </ConstantBuffers>
+ 
+    <Varyings>
+        <Varying name="vCubeCoord" type="FLOAT_VECTOR_3" precision="MEDIUM"/>
+    </Varyings>
+ 
+    <VertexSource language="GLSL_ES_120">
+        <![CDATA[
+            void main()
+            {
+                //without camera position
+                mat4 cameraProjectionView = uCameraProjectionMatrix * mat4(mat3(uCameraViewMatrix));
+                
+                vec4 pos = cameraProjectionView * (uModelMatrix * vec4(aPosition.xyz, 1.0));
+                
+                gl_Position = pos.xyww;
+                vCubeCoord = aPosition.xyz;
+                vCubeCoord.x = -vCubeCoord.x;
+            }
+        ]]>
+    </VertexSource>
+
+    <VertexSource inputLanguage="GLSL_ES_120" outputLanguage="GLSL_ES_300"/>
+    
+    <FragmentSource language="GLSL_ES_120">
+        <![CDATA[
+            void main()
+            {
+                vec3 color = textureCube(skyboxTexture, vCubeCoord).rgb;
+                
+                color = vec3(1.0) - exp(-color * exposure);
+
+                color = pow(color, vec3(1.0 / 2.2));
+                
+                gl_FragColor = vec4(color, 1.0);
+            }
+        ]]>
+    </FragmentSource>
+    
+    <FragmentSource inputLanguage="GLSL_ES_120" outputLanguage="GLSL_ES_300"/>
+
+</Shader>

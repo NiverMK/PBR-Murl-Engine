@@ -1,0 +1,224 @@
+apply plugin: 'com.android.application'
+import org.apache.tools.ant.taskdefs.condition.Os
+import java.util.regex.Pattern
+import com.android.build.OutputFile
+
+apply from: '../../../../../../../murl/common/project/android/gradle/murl.gradle'
+
+ext {
+    // Specifies a list of ABIs that Gradle should create APKs for
+    MURL_ABI_LIST = MURL_ABI_LIST_FROM_COMMOM_MAKE
+
+    // map for the version code that gives each ABI a value (split apk)
+    versionCodes = ['armeabi':1,'armeabi-v7a':2,'arm64-v8a':3,'x86':6,'x86_64':7,'mips':8,'mips64':9]
+
+    // Overwrite variables here if necessary
+    //MURL_ABI_LIST = ["armeabi", "armeabi-v7a", "x86"]
+}
+
+def getFromManifest(name, defaultValue) {
+    def manifestFile = file(android.sourceSets.main.manifest.srcFile)
+    if (manifestFile.exists()) {
+        def pattern = Pattern.compile(name + "=\"([\\w.]+)\"")
+        def matcher = pattern.matcher(manifestFile.getText())
+        if (matcher.find()) {
+            return matcher.group(1)
+        }
+    }
+    return defaultValue;
+}
+
+def getIntFromManifest(name, defaultValue) {
+    def manifestFile = file(android.sourceSets.main.manifest.srcFile)
+    if (manifestFile.exists()) {
+        def pattern = Pattern.compile(name + "=\"(\\d+)\"")
+        def matcher = pattern.matcher(manifestFile.getText())
+        if (matcher.find()) {
+            return Integer.parseInt(matcher.group(1))
+        }
+    }
+    return defaultValue;
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId getFromManifest("package", project.ext.MURL_ANDROID_PACKAGE_NAME)
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionName getFromManifest("versionName", project.ext.MURL_ANDROID_VERSION_NAME)
+        versionCode getIntFromManifest("versionCode", project.ext.MURL_ANDROID_VERSION_CODE)
+        ndk {
+            //ABI configurations of native libraries Gradle should build
+            for (String abi : project.ext.MURL_ABI_LIST)
+            {
+                abiFilters abi
+            }
+        }
+        externalNativeBuild {
+            ndkBuild {
+                // MURL_NDK_MODULE
+                def module_name = project.ext.MURL_MODULE_BIN_FILE
+                // MURL_ANDROID_PROJECT_MK
+                def module_project_file = '../../../common/gnumake/project_' + module_name + '.mk'
+                if (!file(module_project_file).exists()) {
+                    def dir = file("../../../common/gnumake")
+                    dir.listFiles(new FilenameFilter() {
+                        public boolean accept(File directory, String fileName) {
+                            return (fileName.endsWith(".mk") && (fileName.startsWith("project_")));
+                        }
+                    }).each {
+                        module_project_file = it;
+                    }
+                }
+                if (!file(module_project_file).exists()) {
+                    throw new GradleException('MURL_ANDROID_PROJECT_MK not found!')
+                }
+                // NDK_DEBUG
+                def ndkdebug = '1';
+                if (project.ext.MURL_ANDROID_CONFIG == 'release') {
+                    ndkdebug = '0'
+                }
+                // NDK_APPLICATION_MK
+                def ndkApplicationMk = project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/murl_android_appl_project_container.mk'
+                if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+                    ndkApplicationMk = project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/murl_android_appl_project_container_win32.mk'
+                }
+                // ndk build arguments
+                arguments '-j4', 'V=0',
+                        'NDK_PROJECT_PATH=./build/' + project.ext.MURL_ANDROID_CONFIG + '/libso/' + module_name,
+                        'NDK_APPLICATION_MK='+ndkApplicationMk,
+                        'APP_BUILD_SCRIPT='+project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/murl_android_module_project_container.mk',
+                        'MURL_NDK_MODULE=' + module_name,
+                        'NDK_DEBUG=' + ndkdebug,
+                        'APP_SHORT_COMMANDS=true',
+                        // environment variables
+                        'MURL_ANDROID_SDK_ROOT=' + project.ext.MURL_ANDROID_SDK_ROOT,
+                        'MURL_ANDROID_NDK_ROOT=' + project.ext.MURL_ANDROID_NDK_ROOT,
+                        'MURL_ENGINE_ROOT=' + file(project.ext.MURL_ENGINE_ROOT).absolutePath,
+                        'MURL_MODULE_ROOT=' + file('../../../..').absolutePath,
+                        'MURL_ANDROID_PROJECT_MK=' + file(module_project_file).absolutePath,
+                        'MURL_ANDROID_CONFIG=' + project.ext.MURL_ANDROID_CONFIG
+                        // Workaround for a ndk bug on Windows. Mismatch between "\\" and "/" leads to "... No such file or directory" error.
+                        //'NDK_OUT=.externalNativeBuild/ndkBuild/' + project.ext.MURL_ANDROID_CONFIG + '/obj'
+
+                // info
+                println("MURL_ANDROID_CONFIG='" + project.ext.MURL_ANDROID_CONFIG + "'")
+                println("MURL_ANDROID_NDK_ROOT='" + project.ext.MURL_ANDROID_NDK_ROOT + "'")
+            }
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            // Android.mk
+            path project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/murl_android_module_project_container.mk'
+        }
+    }
+    // Release build signing keys
+    signingConfigs {
+        release {
+            if (project.ext.MURL_RELEASE_KEY_FILE != "") {
+                storeFile file(project.ext.MURL_RELEASE_KEY_FILE)
+                storePassword = project.ext.MURL_RELEASE_STORE_PWD
+                keyAlias = project.ext.MURL_RELEASE_KEY_ALIAS
+                keyPassword = project.ext.MURL_RELEASE_KEY_PWD
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            useProguard false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt')
+            jniDebuggable true
+        }
+        release {
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+            proguardFiles project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/proguard.cfg'
+            if (project.ext.MURL_ANDROID_IAB_STORE == "amazon") {
+                proguardFiles project.ext.MURL_ENGINE_ROOT+'/common/project/android/gnumake/proguard_amazon_iap_fragment.cfg'
+            }
+            signingConfig signingConfigs.release
+        }
+    }
+    task murlPreBuild(dependsOn: [configMurl, copy3rdPartyJavaFiles, copyPackages]) {
+    }
+    murlPreBuild.dependsOn generateManifestFile
+    murlPreBuild.dependsOn generateLayoutXML
+    murlPreBuild.dependsOn generateApplicationBase
+    murlPreBuild.dependsOn generateApplication
+    preBuild.dependsOn murlPreBuild
+    sourceSets {
+        main {
+            java {
+                srcDirs += '../../../../source/android/java'
+                srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/java'
+                if (project.ext.MURL_ANDROID_IAB_STORE == "google") {
+                    srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/google/java'
+                }
+                if (project.ext.MURL_ANDROID_IAB_STORE == "amazon") {
+                    srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/amazon/java'
+                }
+                if (project.ext.MURL_ANDROID_IAB_STORE == "samsung") {
+                    srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/samsung/java'
+                }
+            }
+            aidl {
+                if (project.ext.MURL_ANDROID_IAB_STORE == "google") {
+                    srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/google/aidl'
+                }
+                if (project.ext.MURL_ANDROID_IAB_STORE == "samsung") {
+                    srcDirs += project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/samsung/aidl'
+                }
+            }
+            jni {
+                srcDirs = [] //disable automatic ndk-build call
+            }
+            res {
+                srcDirs += "../../../../resources/android"
+            }
+        }
+    }
+    sourceSets.debug.jniLibs {
+        srcDirs += './build/debug/libso/' + project.ext.MURL_MODULE_BIN_FILE + '/libs'
+    }
+    sourceSets.release.jniLibs {
+        srcDirs += './build/release/libso/' + project.ext.MURL_MODULE_BIN_FILE + '/libs'
+    }
+    
+    aaptOptions {
+        noCompress 'murl', 'murlpkg', 'lua'
+    }
+    
+    // Deploy APKs into binaries directories
+    applicationVariants.all { v ->
+        v.getAssembleProvider().configure {
+            it.doLast {
+                println "Deploy variant $v.name (ProductFlavor $v.flavorName, BuildType $v.buildType.name)"
+                copy {
+                    from('build/outputs/apk') {
+                        include "**/*$v.baseName*.apk"
+                    }
+                    into "../../../../binaries/android/gradle/$v.buildType.name"
+                    rename 'app-(.+)', project.ext.MURL_MODULE_BIN_FILE + '-$1'
+                }
+            }
+        }
+    }
+    clean.doFirst {
+        delete '../../../../binaries/android/gradle'
+        delete fileTree('src/main/assets') {
+            include '**/*.murlpkg'
+        }
+    }
+}
+
+dependencies {
+    if (project.ext.MURL_ANDROID_IAB_STORE == "amazon") {
+        compile files(project.ext.MURL_ENGINE_ROOT+'/base/source/platform/android/iab/amazon/libs/in-app-purchasing-2.0.61.jar')
+    }
+}

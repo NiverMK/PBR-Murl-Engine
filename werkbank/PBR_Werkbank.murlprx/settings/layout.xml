@@ -1,0 +1,831 @@
+<?xml version="1.0" ?>
+
+<Werkbank::Model::Project revision="5273">
+  <Werkbank::Model::Property name="Werkbank::Object::id" value="PBR_Werkbank"/>
+  <Werkbank::Model::PreferencesContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Preferences Container"/>
+  </Werkbank::Model::PreferencesContainer>
+  <Werkbank::Model::ObjectCriteriaContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Object Criteria Container"/>
+    <Werkbank::Model::Criteria>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::numberOfInputs" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::inputName0" value="Property Value"/>
+      <Werkbank::Model::ObjectRootCriterion>
+        <Werkbank::Model::Property name="Werkbank::ObjectRootCriterion::operation" value="AND"/>
+        <Werkbank::Model::PropertyGroupCriterion>
+          <Werkbank::Model::Property name="Werkbank::PropertyGroupCriterion::operation" value="AND"/>
+          <Werkbank::Model::Property name="Werkbank::PropertyGroupCriterion::multiplicity" value="AT_LEAST"/>
+          <Werkbank::Model::Property name="Werkbank::PropertyGroupCriterion::count" value="1"/>
+          <Werkbank::Model::PropertyValueCriterion>
+            <Werkbank::Model::Property name="Werkbank::ValueCriterion::type" value="OWN"/>
+            <Werkbank::Model::Property name="Werkbank::ValueCriterion::comparison" value="CONTAINING"/>
+            <Werkbank::Model::Property name="Werkbank::ValueCriterion::sensitivity" value="CASE_INSENSITIVE"/>
+            <Werkbank::Model::Property name="Werkbank::ValueCriterion::source" value="INPUT"/>
+            <Werkbank::Model::Property name="Werkbank::ValueCriterion::index" value="0"/>
+          </Werkbank::Model::PropertyValueCriterion>
+        </Werkbank::Model::PropertyGroupCriterion>
+      </Werkbank::Model::ObjectRootCriterion>
+    </Werkbank::Model::Criteria>
+  </Werkbank::Model::ObjectCriteriaContainer>
+  <Werkbank::Model::PropertyCriteriaContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Property Criteria Container"/>
+    <Werkbank::Model::Criteria>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::numberOfInputs" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::inputName0" value="Property Value"/>
+      <Werkbank::Model::PropertyRootCriterion>
+        <Werkbank::Model::Property name="Werkbank::PropertyRootCriterion::operation" value="AND"/>
+        <Werkbank::Model::PropertyValueCriterion>
+          <Werkbank::Model::Property name="Werkbank::ValueCriterion::type" value="OWN"/>
+          <Werkbank::Model::Property name="Werkbank::ValueCriterion::comparison" value="CONTAINING"/>
+          <Werkbank::Model::Property name="Werkbank::ValueCriterion::sensitivity" value="CASE_INSENSITIVE"/>
+          <Werkbank::Model::Property name="Werkbank::ValueCriterion::source" value="INPUT"/>
+          <Werkbank::Model::Property name="Werkbank::ValueCriterion::index" value="0"/>
+        </Werkbank::Model::PropertyValueCriterion>
+      </Werkbank::Model::PropertyRootCriterion>
+    </Werkbank::Model::Criteria>
+  </Werkbank::Model::PropertyCriteriaContainer>
+  <Werkbank::Model::TextCriteriaContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Text Criteria Container"/>
+    <Werkbank::Model::Criteria>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::numberOfInputs" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::Criteria::inputName0" value="Text"/>
+      <Werkbank::Model::TextRootCriterion>
+        <Werkbank::Model::Property name="Werkbank::TextRootCriterion::operation" value="AND"/>
+      </Werkbank::Model::TextRootCriterion>
+    </Werkbank::Model::Criteria>
+  </Werkbank::Model::TextCriteriaContainer>
+  <Werkbank::Model::PresetContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Container"/>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 419a88da-6aab-45de-800e-363daf8d941e"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="ANIMATION"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 4790320b-1d13-49fa-94d0-2333dc19bd30"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="ATLAS"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 58cb6d7a-eaae-4177-9b3a-0124524061ca"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="FONT"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle c1a5d95e-20a1-4ea3-a7ed-dcd49ca608a1"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="IMAGE"/>
+      <Werkbank::Model::ImagePreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::colorChannelMode" value="RGB"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatImageViewMode" value="PLANE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeImageViewMode" value="CUBE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatArrayImageViewMode" value="PLANE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeArrayImageViewMode" value="CUBE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatImageLayer" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeImageLayer" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatArrayImageLayer" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeArrayImageLayer" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatImageFace" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeImageFace" value="3"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::flatArrayImageFace" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::cubeArrayImageFace" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::textureFilter" value="NEAREST"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::mipLevelMode" value="MANUAL"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::mipLevel" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::zoomMode" value="AUTO"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::zoom" value="2.057377"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::centerX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::centerY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::colorOffsetMode" value="NONE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::colorScaleMode" value="NONE"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::colorOffset" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ImagePreset::colorScale" value="1"/>
+        <Werkbank::Model::PresetCamera>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::isActive" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::slot" value="0"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::navigationMode" value="FOCUSED"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::projectionType" value="PERSPECTIVE"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::posX" value="0"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::posY" value="0"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::posZ" value="1.7312499"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::angleX" value="0.087500036"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::angleY" value="-17.800903"/>
+          <Werkbank::Model::Property name="Werkbank::PresetCamera::fov" value="45"/>
+        </Werkbank::Model::PresetCamera>
+      </Werkbank::Model::ImagePreset>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle cfc4b10e-cf0e-4dbf-adc8-fae77fc37cb9"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="MESH"/>
+      <Werkbank::Model::MeshPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.FACES" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.FACES" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.FACES" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.FACES" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.FACES" value="1f,1f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.WIREFRAME" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.WIREFRAME" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.WIREFRAME" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.WIREFRAME" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.WIREFRAME" value="0.60000002f,0.60000002f,0.60000002f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.VERTICES" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.VERTICES" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.VERTICES" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.VERTICES" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.VERTICES" value="0f,0f,0f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.NORMALS" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.NORMALS" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.NORMALS" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.NORMALS" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.NORMALS" value="0.2f,0.40000001f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.BINORMALS" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.BINORMALS" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.BINORMALS" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.BINORMALS" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.BINORMALS" value="1f,0f,0f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::visible.TANGENTS" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::polygonFaces.TANGENTS" value="FRONT_AND_BACK"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::occlusionMode.TANGENTS" value="TRANSPARENT"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::materialMode.TANGENTS" value="UNLIT_TEXTURED"/>
+        <Werkbank::Model::Property name="Werkbank::MeshPreset::color.TANGENTS" value="0f,0.60000002f,0f,1f"/>
+        <Werkbank::Model::PresetCameraContainer>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Camera Container 7d60edf7-3032-4d3c-8f7f-6619b2cd94e1"/>
+          <Werkbank::Model::PresetCamera>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Camera 9fc0e366-efee-4eec-93e9-a1bcba07e975"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::slot" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::navigationMode" value="FOCUSED"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::projectionType" value="PERSPECTIVE"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posX" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posY" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posZ" value="1.8062499"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::angleX" value="0.125"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::angleY" value="-4.4235249"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::fov" value="45"/>
+          </Werkbank::Model::PresetCamera>
+        </Werkbank::Model::PresetCameraContainer>
+        <Werkbank::Model::PresetLightContainers>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Containers bccdac66-4936-4be3-b16d-bc22d03327df"/>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container 96f6d15e-d1dd-4f19-bc92-4beb3adf27e8"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="0"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container ade0703c-5252-4a14-b17c-e66f91f78e89"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="1"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container 18ba35e1-aa5a-4b0f-b5f9-e50844c9b113"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="2"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container 04ba165e-1507-48fc-89b1-caba8cdd156d"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="3"/>
+          </Werkbank::Model::PresetLightContainer>
+        </Werkbank::Model::PresetLightContainers>
+      </Werkbank::Model::MeshPreset>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle e4f216a0-9315-4224-a15b-70e40ef11df2"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="SHADER"/>
+      <Werkbank::Model::ShaderPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset"/>
+        <Werkbank::Model::PresetCameraContainer>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Camera Container 24951813-255c-4bc7-8ffa-e5b80c057acc"/>
+          <Werkbank::Model::PresetCamera>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Camera 99058fa8-53a1-4e5d-b302-f3f3bf0d8626"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::slot" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::navigationMode" value="FOCUSED"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::projectionType" value="PERSPECTIVE"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posX" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posY" value="0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::posZ" value="4"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::angleX" value="-0.40624988"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::angleY" value="-0.82659781"/>
+            <Werkbank::Model::Property name="Werkbank::PresetCamera::fov" value="45"/>
+          </Werkbank::Model::PresetCamera>
+        </Werkbank::Model::PresetCameraContainer>
+        <Werkbank::Model::PresetLightContainers>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Containers aed61771-8f46-4a19-9a49-86f4ccb55284"/>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container f591156b-91a6-4e1a-96df-47e464c6708d"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="0"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container b64e0e03-5607-48a4-a32f-9e83a7f27f30"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="1"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container 5200b9ef-4888-49b3-8f6f-7c06fb2dc8c1"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="2"/>
+          </Werkbank::Model::PresetLightContainer>
+          <Werkbank::Model::PresetLightContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Light Container 768d9df3-cb05-43cf-8880-03680c96f2d0"/>
+            <Werkbank::Model::Property name="Werkbank::PresetLightContainer::unit" value="3"/>
+          </Werkbank::Model::PresetLightContainer>
+        </Werkbank::Model::PresetLightContainers>
+        <Werkbank::Model::PresetTextureContainers>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Containers 90bcae6d-8e4c-4687-9dca-daf3999e165b"/>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container 0aa5a54c-150b-4aba-870b-4af279a24f86"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="0"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container ce739c2c-feea-4b50-b282-9f9d0978e9a5"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="1"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container 50b8327e-94ba-4140-a1cd-dcc558854285"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="2"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container ff8c3773-d164-4556-985c-2ba63a071d4b"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="3"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container 043b8f6c-0c80-4630-a9ef-3caf0cbde6a9"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="4"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container 5b8686e4-4eaf-4e93-9708-b56c4f581955"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="5"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container 96e85277-3bcd-4618-bdad-9da3926dcb33"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="6"/>
+          </Werkbank::Model::PresetTextureContainer>
+          <Werkbank::Model::PresetTextureContainer>
+            <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Texture Container f5404253-5f10-45db-9d66-01222c0c6b82"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::isActive" value="true"/>
+            <Werkbank::Model::Property name="Werkbank::PresetTextureContainer::unit" value="7"/>
+          </Werkbank::Model::PresetTextureContainer>
+        </Werkbank::Model::PresetTextureContainers>
+      </Werkbank::Model::ShaderPreset>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 973e39b0-218b-4155-8db3-aaa8658e92e0"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="AUDIO"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle cb05bc6c-d8d7-48fa-b9ae-d808389e42b0"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="VIDEO"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 26d8b7e7-ee63-456c-8f86-19960c332aac"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="SCRIPT"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle ee98f562-8614-44d7-a1c1-52c45d88a72b"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="PACKAGE"/>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 0ff8e702-1acf-4b03-b017-38d80308d20c"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="SCENE_ENTITY"/>
+      <Werkbank::Model::SceneEntityPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TRANSFORM.UNSELECTED" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TRANSFORM.UNSELECTED" value="SOLID_OUTSIDE"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TRANSFORM.UNSELECTED" value="0.60000002f,0.60000002f,0.60000002f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TRANSFORM.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TRANSFORM.HIGHLIGHTED" value="SOLID_OUTSIDE"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TRANSFORM.HIGHLIGHTED" value="0.60000002f,0.60000002f,0.60000002f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TRANSFORM.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TRANSFORM.SELECTED" value="SOLID_OUTSIDE"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TRANSFORM.SELECTED" value="0.60000002f,0.60000002f,0.60000002f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TRANSFORM.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TRANSFORM.HOVERING" value="SOLID_OUTSIDE"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TRANSFORM.HOVERING" value="0.80000001f,0.80000001f,0.80000001f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BOUNDING_VOLUME.UNSELECTED" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BOUNDING_VOLUME.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BOUNDING_VOLUME.UNSELECTED" value="1f,1f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BOUNDING_VOLUME.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BOUNDING_VOLUME.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BOUNDING_VOLUME.HIGHLIGHTED" value="1f,1f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BOUNDING_VOLUME.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BOUNDING_VOLUME.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BOUNDING_VOLUME.SELECTED" value="1f,1f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BOUNDING_VOLUME.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BOUNDING_VOLUME.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BOUNDING_VOLUME.HOVERING" value="1f,1f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.CAMERA.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.CAMERA.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.CAMERA.UNSELECTED" value="1f,0.5f,0f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.CAMERA.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.CAMERA.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.CAMERA.HIGHLIGHTED" value="1f,0.5f,0f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.CAMERA.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.CAMERA.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.CAMERA.SELECTED" value="1f,0.5f,0f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.CAMERA.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.CAMERA.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.CAMERA.HOVERING" value="1f,0.75f,0.5f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LIGHT.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LIGHT.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LIGHT.UNSELECTED" value="1f,1f,0f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LIGHT.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LIGHT.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LIGHT.HIGHLIGHTED" value="1f,1f,0f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LIGHT.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LIGHT.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LIGHT.SELECTED" value="1f,1f,0f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LIGHT.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LIGHT.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LIGHT.HOVERING" value="1f,1f,0.5f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LISTENER.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LISTENER.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LISTENER.UNSELECTED" value="0f,0.5f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LISTENER.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LISTENER.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LISTENER.HIGHLIGHTED" value="0f,0.5f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LISTENER.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LISTENER.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LISTENER.SELECTED" value="0f,0.5f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.LISTENER.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.LISTENER.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.LISTENER.HOVERING" value="0.5f,0.75f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.PLAYABLE.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.PLAYABLE.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.PLAYABLE.UNSELECTED" value="0f,1f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.PLAYABLE.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.PLAYABLE.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.PLAYABLE.HIGHLIGHTED" value="0f,1f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.PLAYABLE.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.PLAYABLE.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.PLAYABLE.SELECTED" value="0f,1f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.PLAYABLE.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.PLAYABLE.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.PLAYABLE.HOVERING" value="0.5f,1f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BODY.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BODY.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BODY.UNSELECTED" value="1f,0f,0.5f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BODY.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BODY.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BODY.HIGHLIGHTED" value="1f,0f,0.5f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BODY.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BODY.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BODY.SELECTED" value="1f,0f,0.5f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.BODY.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.BODY.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.BODY.HOVERING" value="1f,0.5f,0.75f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.COLLIDER.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.COLLIDER.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.COLLIDER.UNSELECTED" value="1f,0f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.COLLIDER.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.COLLIDER.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.COLLIDER.HIGHLIGHTED" value="1f,0f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.COLLIDER.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.COLLIDER.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.COLLIDER.SELECTED" value="1f,0f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.COLLIDER.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.COLLIDER.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.COLLIDER.HOVERING" value="1f,0.5f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.FIELD.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.FIELD.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.FIELD.UNSELECTED" value="1f,0.5f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.FIELD.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.FIELD.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.FIELD.HIGHLIGHTED" value="1f,0.5f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.FIELD.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.FIELD.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.FIELD.SELECTED" value="1f,0.5f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.FIELD.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.FIELD.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.FIELD.HOVERING" value="1f,0.75f,1f,1f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TOUCHABLE.UNSELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TOUCHABLE.UNSELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TOUCHABLE.UNSELECTED" value="1f,1f,1f,0.30000001f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TOUCHABLE.HIGHLIGHTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TOUCHABLE.HIGHLIGHTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TOUCHABLE.HIGHLIGHTED" value="1f,1f,1f,0.60000002f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TOUCHABLE.SELECTED" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TOUCHABLE.SELECTED" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TOUCHABLE.SELECTED" value="1f,1f,1f,0.89999998f"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::visible.TOUCHABLE.HOVERING" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::renderMode.TOUCHABLE.HOVERING" value="WIREFRAME"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::color.TOUCHABLE.HOVERING" value="1f,1f,1f,1f"/>
+      </Werkbank::Model::SceneEntityPreset>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 70dc483f-9f78-483d-9846-dc9042b86c0c"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="SCENE_FILTER"/>
+      <Werkbank::Model::SceneFilterPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset 1"/>
+      </Werkbank::Model::SceneFilterPreset>
+      <Werkbank::Model::SceneFilterPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset 2"/>
+      </Werkbank::Model::SceneFilterPreset>
+      <Werkbank::Model::SceneFilterPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset 3"/>
+      </Werkbank::Model::SceneFilterPreset>
+      <Werkbank::Model::SceneFilterPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset 4"/>
+      </Werkbank::Model::SceneFilterPreset>
+    </Werkbank::Model::PresetBundle>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle fce4ddea-32a0-40ec-9973-84df5260e8ef"/>
+      <Werkbank::Model::Property name="Werkbank::PresetBundle::presetType" value="SCENE_SELECTION"/>
+      <Werkbank::Model::SceneSelectionPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Mutable Transform"/>
+        <Werkbank::Model::Property name="Werkbank::SceneSelectionPreset::selectableSceneNodeTypes" value="MUTABLE_TRANSFORMABLE_NODE,MUTABLE_NODE,NODE,INSTANCE,REFERENCE,TRANSFORMABLE_NODE,TRANSFORMABLE_INSTANCE,TRANSFORMABLE_REFERENCE,MUTABLE_INSTANCE,MUTABLE_REFERENCE,MUTABLE_TRANSFORMABLE_INSTANCE,MUTABLE_TRANSFORMABLE_REFERENCE"/>
+      </Werkbank::Model::SceneSelectionPreset>
+      <Werkbank::Model::SceneSelectionPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Actual Node"/>
+        <Werkbank::Model::Property name="Werkbank::SceneSelectionPreset::selectableSceneNodeTypes" value="NODE,INSTANCE,REFERENCE,TRANSFORMABLE_NODE,TRANSFORMABLE_INSTANCE,TRANSFORMABLE_REFERENCE,MUTABLE_NODE,MUTABLE_INSTANCE,MUTABLE_REFERENCE,MUTABLE_TRANSFORMABLE_NODE,MUTABLE_TRANSFORMABLE_INSTANCE,MUTABLE_TRANSFORMABLE_REFERENCE"/>
+      </Werkbank::Model::SceneSelectionPreset>
+    </Werkbank::Model::PresetBundle>
+  </Werkbank::Model::PresetContainer>
+  <Werkbank::Model::TargetConfigurationContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Target Configuration Container"/>
+    <Werkbank::Model::TargetConfiguration>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::name" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::language" value="ENGLISH"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::targetClass" value="COMPUTER"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::targetDevice" value="DEFAULT"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::targetHost" value="DEFAULT"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::operatingSystem" value="OSX_10_10"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::gpu" value="DEFAULT"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::videoApi" value="GLES20"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::audioApi" value="AL11"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::prescaleFactor" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::screenSizeX" value="960"/>
+      <Werkbank::Model::Property name="Werkbank::TargetConfiguration::screenSizeY" value="640"/>
+    </Werkbank::Model::TargetConfiguration>
+  </Werkbank::Model::TargetConfigurationContainer>
+  <Werkbank::Model::PackageConfigurationContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Package Configuration Container"/>
+    <Werkbank::Model::PackageConfiguration>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::PackageConfiguration::name" value="Default"/>
+      <Werkbank::Model::PackageBundleReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Package Bundle Reference 30286ae3-c55f-43d1-b6b5-0220e5d5c82e"/>
+        <Werkbank::Model::Property name="Werkbank::PackageBundleReference::packageBundleId" value="/Package Bundle 13eae077-5186-4b59-abe3-b0d299d0e78f"/>
+        <Werkbank::Model::Property name="Werkbank::PackageBundleReference::isLoaded" value="true"/>
+        <Werkbank::Model::PackageReference>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Package Reference 8d6e4ba8-eda5-49bb-bc07-be6ce624fe39"/>
+          <Werkbank::Model::Property name="Werkbank::PackageReference::packageId" value="/Package deabf393-df9d-409d-bace-261353cc4f30"/>
+          <Werkbank::Model::Property name="Werkbank::PackageReference::isLoaded" value="true"/>
+        </Werkbank::Model::PackageReference>
+      </Werkbank::Model::PackageBundleReference>
+    </Werkbank::Model::PackageConfiguration>
+  </Werkbank::Model::PackageConfigurationContainer>
+  <Werkbank::Model::TagSetContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Tag Set Container"/>
+    <Werkbank::Model::TagSet>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::TagSet::name" value="Default"/>
+    </Werkbank::Model::TagSet>
+  </Werkbank::Model::TagSetContainer>
+  <Werkbank::Model::PerspectiveContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Perspective Container"/>
+    <Werkbank::Model::Perspective>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::Perspective::name" value="Scene Editor"/>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 546403e0-7e46-4654-8327-5a7632c8ffd5"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 6e7fcc18-af67-41a6-acb7-625ad395b8a8"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Log"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 81120fcc-73a6-446a-9ddc-35a39169252d"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Issues"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference ba1cc798-a297-4c28-b3b5-dcea771599e5"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Settings"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 886cc923-4431-45a7-b3fd-0edc51957a03"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Time Controls"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference fa61b5b1-c6e6-418d-8c89-88da0fa7cad9"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Object Palette"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference bdd0dcee-4fec-4393-ad96-54de2c63eaba"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Project Navigator"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference ea0603b9-6dc1-4d48-b418-8bda4c66c0cb"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Scene Navigator"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 5a10e5b3-7693-4794-8dbd-a7b92674196a"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Object Inspector"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+      <Werkbank::Model::ClientReference>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Reference 483ac407-5cfb-4fb3-a826-dadb8226865e"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::clientId" value="/Clients/Scene Editor"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isVisible" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDockable" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ClientReference::isDocked" value="false"/>
+      </Werkbank::Model::ClientReference>
+    </Werkbank::Model::Perspective>
+  </Werkbank::Model::PerspectiveContainer>
+  <Werkbank::Model::ClientContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Container"/>
+    <Werkbank::Model::ObjectPalette>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Object Palette"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+      </Werkbank::Model::FindOptions>
+      <Werkbank::Model::GraphNodePalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Graph Nodes"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Graph Node Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::GraphNodePalette>
+      <Werkbank::Model::GraphControllerPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Graph Controllers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Graph Controller Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::GraphControllerPalette>
+      <Werkbank::Model::ShaderVariablePalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Shader Variables"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Shader Variable Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ShaderVariablePalette>
+      <Werkbank::Model::SceneConversionModifierPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Conversion Modifiers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Scene Conversion Modifier Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::SceneConversionModifierPalette>
+      <Werkbank::Model::ImageConversionModifierPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Image Conversion Modifiers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Image Conversion Modifier Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ImageConversionModifierPalette>
+      <Werkbank::Model::TagPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Tags"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Tag Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TagPalette>
+    </Werkbank::Model::ObjectPalette>
+    <Werkbank::Model::ProjectNavigator>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Project Navigator"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+      </Werkbank::Model::FindOptions>
+      <Werkbank::Model::PackageNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Packages"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Package Bundle Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PackageNavigator>
+      <Werkbank::Model::ResourceNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Resources"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Resource Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ResourceNavigator>
+      <Werkbank::Model::FileNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Files"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/File Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::FileNavigator>
+      <Werkbank::Model::TagSetNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Tag Sets"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Tag Set Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TagSetNavigator>
+      <Werkbank::Model::TargetConfigurationNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Target Configurations"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Target Configuration Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TargetConfigurationNavigator>
+      <Werkbank::Model::PackageConfigurationNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Package Configurations"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Package Configuration Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PackageConfigurationNavigator>
+      <Werkbank::Model::PresetNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Presets"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Preset Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PresetNavigator>
+      <Werkbank::Model::PerspectiveNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Perspectives"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Perspective Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PerspectiveNavigator>
+      <Werkbank::Model::PluginNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Plugins"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::containerId" value="/Plugin Container"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PluginNavigator>
+    </Werkbank::Model::ProjectNavigator>
+    <Werkbank::Model::SceneNavigator>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Navigator"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+      </Werkbank::Model::FindOptions>
+    </Werkbank::Model::SceneNavigator>
+    <Werkbank::Model::ObjectInspector>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Object Inspector"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::ObjectSelection>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+      </Werkbank::Model::ObjectSelection>
+      <Werkbank::Model::ReferenceInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="References"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::ObjectSelection>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+        </Werkbank::Model::ObjectSelection>
+      </Werkbank::Model::ReferenceInspector>
+      <Werkbank::Model::PropertyInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Properties"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::ObjectSelection>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+        </Werkbank::Model::ObjectSelection>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Werkbank"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Murl::Graph::Node"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Murl::Graph::Node::IncludeCondition"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Murl::Graph::Node::ExcludeCondition"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Murl::Graph::Texture"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::scope" value="Murl::Graph::CubemapTexture"/>
+        </Werkbank::Model::PropertyPanel>
+      </Werkbank::Model::PropertyInspector>
+      <Werkbank::Model::StateInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="State"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::ObjectSelection>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+        </Werkbank::Model::ObjectSelection>
+      </Werkbank::Model::StateInspector>
+      <Werkbank::Model::ResourceInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Resource"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::ObjectSelection>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+        </Werkbank::Model::ObjectSelection>
+      </Werkbank::Model::ResourceInspector>
+    </Werkbank::Model::ObjectInspector>
+    <Werkbank::Model::SceneEditor>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Editor"/>
+      <Werkbank::Model::ObjectSelection>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Edited"/>
+      </Werkbank::Model::ObjectSelection>
+      <Werkbank::Model::ObjectSelection>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene"/>
+      </Werkbank::Model::ObjectSelection>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 0"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 1"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 2"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 3"/>
+      </Werkbank::Model::ScenePanel>
+    </Werkbank::Model::SceneEditor>
+    <Werkbank::Model::TimeControls>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Time Controls"/>
+    </Werkbank::Model::TimeControls>
+  </Werkbank::Model::ClientContainer>
+</Werkbank::Model::Project>

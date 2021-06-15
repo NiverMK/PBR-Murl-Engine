@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5F573F9-6F7D-4DF1-A410-9C2E5ABCB563}</ProjectGuid>
+    <RootNamespace>pbr_project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\binaries\win32\vs2017\$(Configuration)\x86\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\binaries\win32\vs2017\$(Configuration)\x86\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\binaries\win32\vs2017\$(Configuration)\x64\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\binaries\win32\vs2017\$(Configuration)\x64\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(IncludePath);$(DXSDK_DIR)Include;..\..\..\..\..\..\murl\base\include\app;..\..\..\..\..\..\murl\base\include\platform;..\..\..\..\..\..\murl\base\include\engine;..\..\..\..\..\..\murl\base\include\engine\audio;..\..\..\..\..\..\murl\base\include\engine\core;..\..\..\..\..\..\murl\base\include\engine\debug;..\..\..\..\..\..\murl\base\include\engine\video;..\..\..\..\..\..\murl\base\include\engine\graph;..\..\..\..\..\..\murl\base\include\engine\input;..\..\..\..\..\..\murl\base\include\engine\logic;..\..\..\..\..\..\murl\base\include\engine\math;..\..\..\..\..\..\murl\base\include\engine\output;..\..\..\..\..\..\murl\base\include\engine\physics;..\..\..\..\..\..\murl\base\include\engine\resource;..\..\..\..\..\..\murl\base\include\engine\system;..\..\..\..\..\..\murl\base\include\engine\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>murl_3rd_party.lib;murl_engine.lib;murl_platform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(LibraryPath);$(DXSDK_DIR)\Lib\x86;..\..\..\..\..\..\murl\3rd_party\binaries\win32\vs2017\$(Configuration)\x86;..\..\..\..\..\..\murl\base\binaries\win32\vs2017\$(Configuration)\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(IncludePath);$(DXSDK_DIR)Include;..\..\..\..\..\..\murl\base\include\app;..\..\..\..\..\..\murl\base\include\platform;..\..\..\..\..\..\murl\base\include\engine;..\..\..\..\..\..\murl\base\include\engine\audio;..\..\..\..\..\..\murl\base\include\engine\core;..\..\..\..\..\..\murl\base\include\engine\debug;..\..\..\..\..\..\murl\base\include\engine\video;..\..\..\..\..\..\murl\base\include\engine\graph;..\..\..\..\..\..\murl\base\include\engine\input;..\..\..\..\..\..\murl\base\include\engine\logic;..\..\..\..\..\..\murl\base\include\engine\math;..\..\..\..\..\..\murl\base\include\engine\output;..\..\..\..\..\..\murl\base\include\engine\physics;..\..\..\..\..\..\murl\base\include\engine\resource;..\..\..\..\..\..\murl\base\include\engine\system;..\..\..\..\..\..\murl\base\include\engine\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>murl_3rd_party.lib;murl_engine.lib;murl_platform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(LibraryPath);$(DXSDK_DIR)\Lib\x64;..\..\..\..\..\..\murl\3rd_party\binaries\win32\vs2017\$(Configuration)\x64;..\..\..\..\..\..\murl\base\binaries\win32\vs2017\$(Configuration)\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(IncludePath);$(DXSDK_DIR)Include;..\..\..\..\..\..\murl\base\include\app;..\..\..\..\..\..\murl\base\include\platform;..\..\..\..\..\..\murl\base\include\engine;..\..\..\..\..\..\murl\base\include\engine\audio;..\..\..\..\..\..\murl\base\include\engine\core;..\..\..\..\..\..\murl\base\include\engine\debug;..\..\..\..\..\..\murl\base\include\engine\video;..\..\..\..\..\..\murl\base\include\engine\graph;..\..\..\..\..\..\murl\base\include\engine\input;..\..\..\..\..\..\murl\base\include\engine\logic;..\..\..\..\..\..\murl\base\include\engine\math;..\..\..\..\..\..\murl\base\include\engine\output;..\..\..\..\..\..\murl\base\include\engine\physics;..\..\..\..\..\..\murl\base\include\engine\resource;..\..\..\..\..\..\murl\base\include\engine\system;..\..\..\..\..\..\murl\base\include\engine\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>murl_3rd_party.lib;murl_engine.lib;murl_platform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(LibraryPath);$(DXSDK_DIR)\Lib\x86;..\..\..\..\..\..\murl\3rd_party\binaries\win32\vs2017\$(Configuration)\x86;..\..\..\..\..\..\murl\base\binaries\win32\vs2017\$(Configuration)\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\..\scripts\pack_resources.cmd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(IncludePath);$(DXSDK_DIR)Include;..\..\..\..\..\..\murl\base\include\app;..\..\..\..\..\..\murl\base\include\platform;..\..\..\..\..\..\murl\base\include\engine;..\..\..\..\..\..\murl\base\include\engine\audio;..\..\..\..\..\..\murl\base\include\engine\core;..\..\..\..\..\..\murl\base\include\engine\debug;..\..\..\..\..\..\murl\base\include\engine\video;..\..\..\..\..\..\murl\base\include\engine\graph;..\..\..\..\..\..\murl\base\include\engine\input;..\..\..\..\..\..\murl\base\include\engine\logic;..\..\..\..\..\..\murl\base\include\engine\math;..\..\..\..\..\..\murl\base\include\engine\output;..\..\..\..\..\..\murl\base\include\engine\physics;..\..\..\..\..\..\murl\base\include\engine\resource;..\..\..\..\..\..\murl\base\include\engine\system;..\..\..\..\..\..\murl\base\include\engine\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>murl_3rd_party.lib;murl_engine.lib;murl_platform.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(LibraryPath);$(DXSDK_DIR)\Lib\x64;..\..\..\..\..\..\murl\3rd_party\binaries\win32\vs2017\$(Configuration)\x64;..\..\..\..\..\..\murl\base\binaries\win32\vs2017\$(Configuration)\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PreBuildEvent>
+      <Command>..\..\..\scripts\pack_resources.cmd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\pbr_project.cpp" />
+    <ClCompile Include="..\..\..\source\pbr_project_app.cpp" />
+    <ClCompile Include="..\..\..\source\pbr_project_logic.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\pbr_project_app.h" />
+    <ClInclude Include="..\..\..\source\pbr_project_logic.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\data\packages\startup.murlpkg" />
+    <None Include="..\..\..\resources\win32\murl.ico" />
+    <None Include="..\..\..\documents\concept.txt" />
+    <None Include="..\..\..\scripts\atlas_generator.cmd" />
+    <None Include="..\..\..\scripts\atlas_generator.sh" />
+    <None Include="..\..\..\scripts\pack_resources.cmd" />
+    <None Include="..\..\..\scripts\pack_resources.sh" />
+    <None Include="..\..\..\scripts\set_dir.cmd" />
+    <None Include="..\..\..\scripts\set_dir.sh" />
+    <None Include="..\..\..\scripts\set_env.cmd" />
+    <None Include="..\..\..\scripts\set_env.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\resources\win32\pbr_project.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_camera.xml" />
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_main.xml" />
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_materials.xml" />
+    <Xml Include="..\..\..\data\packages\main.murlres\package.xml" />
+    <Xml Include="..\..\..\scripts\atlas_config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\..\..\..\..\murl\common\xsd\murl_graph_nodes.xsd">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xsd>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{e77b50fb-034e-4f9d-9e69-528a9994f91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{a4af0207-8bb2-4c14-8007-1a5ff11707f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\packages">
+      <UniqueIdentifier>{efb6eca8-c3f6-4e2a-9ef7-fff9e20870d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{362d3550-9226-4ee5-8974-54b8ff6c443f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources\win32">
+      <UniqueIdentifier>{c680d5c4-a920-4d09-baf5-0ba75a211a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="documents">
+      <UniqueIdentifier>{b1cc2a65-0bdc-e057-04b0-9328c47d578e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scripts">
+      <UniqueIdentifier>{634f5e2e-6f00-5dcd-9baa-f5dc5086e739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\packages\main.murlres">
+      <UniqueIdentifier>{fadaa964-20bb-4b6f-a2f8-6e02200a1fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\xsd">
+      <UniqueIdentifier>{355d0d77-260a-44bd-aa1c-38711aaa7899}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\pbr_project.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\pbr_project_app.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\pbr_project_logic.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\pbr_project_app.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\pbr_project_logic.h">
+      <Filter>source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\data\packages\startup.murlpkg">
+      <Filter>data\packages</Filter>
+    </None>
+    <None Include="..\..\..\resources\win32\murl.ico">
+      <Filter>resources\win32</Filter>
+    </None>
+    <None Include="..\..\..\documents\concept.txt">
+      <Filter>documents</Filter>
+    </None>
+    <None Include="..\..\..\scripts\atlas_generator.cmd">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\atlas_generator.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\pack_resources.cmd">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\pack_resources.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\set_dir.cmd">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\set_dir.sh">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\set_env.cmd">
+      <Filter>scripts</Filter>
+    </None>
+    <None Include="..\..\..\scripts\set_env.sh">
+      <Filter>scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\resources\win32\pbr_project.rc">
+      <Filter>resources\win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_camera.xml">
+      <Filter>data\packages\main.murlres</Filter>
+    </Xml>
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_main.xml">
+      <Filter>data\packages\main.murlres</Filter>
+    </Xml>
+    <Xml Include="..\..\..\data\packages\main.murlres\graph_materials.xml">
+      <Filter>data\packages\main.murlres</Filter>
+    </Xml>
+    <Xml Include="..\..\..\data\packages\main.murlres\package.xml">
+      <Filter>data\packages\main.murlres</Filter>
+    </Xml>
+    <Xml Include="..\..\..\scripts\atlas_config.xml">
+      <Filter>scripts</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="..\..\..\..\..\..\murl\common\xsd\murl_graph_nodes.xsd">
+      <Filter>data\xsd</Filter>
+    </Xsd>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,602 @@
+<?xml version="1.0" ?>
+
+<Werkbank::Model::Project revision="5273">
+  <Werkbank::Model::Property name="Werkbank::Object::id" value="PBR_Werkbank"/>
+  <Werkbank::Model::Property name="Werkbank::Project::focusedObjectId" value="/Clients/Scene Editor"/>
+  <Werkbank::Model::Property name="Werkbank::Project::focusedClientId" value="/Clients/Scene Editor"/>
+  <Werkbank::Model::Property name="Werkbank::Project::focusedObjectSelectionId" value="/Clients/Scene Editor/Edited"/>
+  <Werkbank::Model::Property name="Werkbank::Project::activeTagSetId" value="/Tag Sets/Default"/>
+  <Werkbank::Model::Property name="Werkbank::Project::activePerspectiveId" value="/Perspectives/Default"/>
+  <Werkbank::Model::Property name="Werkbank::Project::activeTargetConfigurationId" value="/Target Configurations/Default"/>
+  <Werkbank::Model::Property name="Werkbank::Project::activePackageConfigurationId" value="/Package Configurations/Default"/>
+  <Werkbank::Model::Property name="Werkbank::Project::uiState" value="TFJVTZkUAABaAAAAQgAAAAAAAAAAAAAAAdnQywADAAAAAAAAAAAAFwAABZ8AAAM9AAAAAAAAAC0AAAWfAAADPQAAAAACAAAABaAAAAAAAAAALQAABZ8AAAM9"/>
+  <Werkbank::Model::PreferencesContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Preferences Container"/>
+    <Werkbank::Model::Preferences>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="ProjectUserPreferences"/>
+      <Werkbank::Model::Preferences>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Directories"/>
+        <Werkbank::Model::Property name="OutputDirectory" value="../../../murl_2020/tutorials/myProjects/pbr_project/data/packages"/>
+      </Werkbank::Model::Preferences>
+      <Werkbank::Model::Preferences>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Project"/>
+        <Werkbank::Model::Property name="DefaultFileUpdatePolicy" value="AUTOMATICALLY_WHEN_DIRTY"/>
+      </Werkbank::Model::Preferences>
+    </Werkbank::Model::Preferences>
+  </Werkbank::Model::PreferencesContainer>
+  <Werkbank::Model::PresetContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Container"/>
+    <Werkbank::Model::PresetBundle>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Preset Bundle 0ff8e702-1acf-4b03-b017-38d80308d20c"/>
+      <Werkbank::Model::SceneEntityPreset>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::SceneEntityPreset::selectionState" value="UNSELECTED"/>
+      </Werkbank::Model::SceneEntityPreset>
+    </Werkbank::Model::PresetBundle>
+  </Werkbank::Model::PresetContainer>
+  <Werkbank::Model::PerspectiveContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Perspective Container"/>
+    <Werkbank::Model::Perspective>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Default"/>
+      <Werkbank::Model::Property name="Werkbank::Perspective::uiState" value="TFJVTZkUAAANCwAAAAAAANoJAAAbAQAAAAAA/wAAAAD9AAAABAAAAAAAAANfAAACu/wCAAAAAfwAAAA0AAACuwAAADwA/////AEAAAAC/AAAAAwAAAEKAAAAiAD////8AgAAAAL7AAAAIgBQAHIAbwBqAGUAYwB0ACAATgBhAHYAaQBnAGEAdABvAHIBAAAANAAAAdcAAAAaAP////sAAAAcAE8AYgBqAGUAYwB0ACAAUABhAGwAZQB0AHQAZQEAAAITAAAA3AAAABoA/////AAAAR4AAAJNAAABGAD////8AQAAAC37AAAAHgBTAGMAZQBuAGUAIABOAGEAdgBpAGcAYQB0AG8AcgEAAAEeAAABIgAAAIgA////+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAkgAAAEjAAAAiAD////7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACSAAAASMAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAI7AAABMAAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAlMAAAEEAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAAB9gAAAWEAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIQAAABRwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAdYAAAGBAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAAB+gAAAV0AAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAHxAAABZgAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAkQAAAETAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAAB7QAAAWoAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAJMAAABDAAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAgMAAAFVAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACVQAAAQMAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIoAAABMAAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAjgAAAEgAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACTwAAAQkAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIkAAABNAAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAj4AAAEaAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACSAAAARAAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAI1AAABIwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAioAAAEuAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACHgAAAToAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAJFAAABEwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAhAAAAFIAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACIQAAATcAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIxAAABJwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAikAAAEvAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAAB9AAAAWQAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIHAAABUQAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAhIAAAFGAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACQAAAARgAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIJAAABTwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAg0AAAFLAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACHAAAATwAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIiAAABNgAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAjgAAAEgAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACOQAAAR8AAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAIYAAABRAAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAhkAAAE8AAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAAB+gAAAWQAAAAAAAAAAPsAAAAQAFIAZQBzAG8AdQByAGMAZQEAAAJ5AAABiwAAAAAAAAAA+wAAABAAUgBlAHMAbwB1AHIAYwBlAQAAAloAAAFIAAAAAAAAAAD7AAAAEABSAGUAcwBvAHUAcgBjAGUBAAACGwAAAXEAAAAAAAAAAAAAAAEAAACxAAACu/wCAAAAAfsAAAAaAEMAbwBtAG0AYQBuAGQAIABTAHQAYQBjAGsAAAAANAAAApoAAAAAAAAAAAAAAAIAAARdAAABmvwBAAAAAfsAAAAYAFMAYwBlAG4AZQAgAEUAZABpAHQAbwByAgAAAUMAAAFHAAAEXQAAAZoAAAADAAACIQAAAJ78AQAAAAH8AAADcwAAAiEAAACIAP////oAAAAAAgAAAAT7AAAAEABTAGUAdAB0AGkAbgBnAHMBAAAAAP////8AAAAaAP////sAAAAGAEwAbwBnAQAAAAD/////AAAAGgD////7AAAAGgBUAGkAbQBlACAAQwBvAG4AdAByAG8AbABzAQAAAAD/////AAAAGgD////7AAAADABJAHMAcwB1AGUAcwEAAAIlAAAAygAAABoA////AAACIQAAAhUAAAABAAAAAgAAAAEAAAAC/AAAAAQAAAAAAAAAAQAAACAARAB1AG0AbQB5AFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAAiAEQAdQBtAG0AeQBUAG8AbwBsAEIAYQByAFIAaQBnAGgAdAMAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAWAFQAbwBvAGwAQgBhAHIATQBhAGkAbgEAAAAA/////wAAAAAAAAAAAAAAAwAAAAEAAAAkAEQAdQBtAG0AeQBUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAABpZD1Mb2c7Y2VudGVySW5kZXg9LTE7fGlkPUlzc3VlcztjZW50ZXJJbmRleD0tMTt8aWQ9U2V0dGluZ3M7Y2VudGVySW5kZXg9LTE7fGlkPVRpbWUgQ29udHJvbHM7Y2VudGVySW5kZXg9LTE7fGlkPU9iamVjdCBQYWxldHRlO2NlbnRlckluZGV4PS0xO3xpZD1Qcm9qZWN0IE5hdmlnYXRvcjtjZW50ZXJJbmRleD0tMTt8aWQ9U2NlbmUgTmF2aWdhdG9yO2NlbnRlckluZGV4PS0xO3xpZD1PYmplY3QgSW5zcGVjdG9yO2NlbnRlckluZGV4PS0xO3xpZD1TY2VuZSBFZGl0b3I7Y2VudGVySW5kZXg9MDt8"/>
+    </Werkbank::Model::Perspective>
+  </Werkbank::Model::PerspectiveContainer>
+  <Werkbank::Model::ClientContainer>
+    <Werkbank::Model::Property name="Werkbank::Object::id" value="Client Container"/>
+    <Werkbank::Model::ObjectPalette>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Object Palette"/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::uiState" value="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"/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+      </Werkbank::Model::FindOptions>
+      <Werkbank::Model::GraphNodePalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Graph Nodes"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Graph Node Templates/Murl::Graph::Comment"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::GraphNodePalette>
+      <Werkbank::Model::GraphControllerPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Graph Controllers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Graph Controller Templates/Murl::Graph::CameraNodeLinkController"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::GraphControllerPalette>
+      <Werkbank::Model::ShaderVariablePalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Shader Variables"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Shader Variable Templates/CustomConstantFLOAT_MATRIX_4"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ShaderVariablePalette>
+      <Werkbank::Model::SceneConversionModifierPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Conversion Modifiers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::SceneConversionModifierPalette>
+      <Werkbank::Model::ImageConversionModifierPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Image Conversion Modifiers"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Image Conversion Modifier Templates/LightnessFactorToAlphaModifier"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ImageConversionModifierPalette>
+      <Werkbank::Model::TagPalette>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Tags"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TagPalette>
+    </Werkbank::Model::ObjectPalette>
+    <Werkbank::Model::ProjectNavigator>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Project Navigator"/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::uiState" value="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"/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+      </Werkbank::Model::FindOptions>
+      <Werkbank::Model::PackageNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Packages"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Resource Bundle da3a0ee0-ffb3-4d12-be96-6e5bc6ce1d85"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PackageNavigator>
+      <Werkbank::Model::ResourceNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Resources"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Resources/MeshEyeModel"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::ResourceNavigator>
+      <Werkbank::Model::FileNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Files"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Files/SphereMurl"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::FileNavigator>
+      <Werkbank::Model::TagSetNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Tag Sets"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TagSetNavigator>
+      <Werkbank::Model::TargetConfigurationNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Target Configurations"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::TargetConfigurationNavigator>
+      <Werkbank::Model::PackageConfigurationNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Package Configurations"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PackageConfigurationNavigator>
+      <Werkbank::Model::PresetNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Presets"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PresetNavigator>
+      <Werkbank::Model::PerspectiveNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Perspectives"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PerspectiveNavigator>
+      <Werkbank::Model::PluginNavigator>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Plugins"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="false"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::FindOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        </Werkbank::Model::FindOptions>
+      </Werkbank::Model::PluginNavigator>
+    </Werkbank::Model::ProjectNavigator>
+    <Werkbank::Model::SceneNavigator>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Navigator"/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::uiState" value="z20AAHic7V1db9NAEOS5v+IU8YjUhm+E8oAqhJAAIUAIHq3WVJZCXDkOAiH+O24cHMex45n12d3gjaq28a13xzu3e9e9uya6nE1Oz+dRuEiXpx8vwkXo3gU/oqsgjZPJvZPfJ85Fmci6pdzg3E3Tv8Ykns9fJGGwbnBuub7wPl5+nU3ONtdy8fyG83iRBtEiTDZt29am9rJELvM2E3gT/IpXaUloVywXvHu2I1AV2Wp7lcSr64ps1rp8+fM6WFyGmVSarMI9gaq6XOHnMEmji2BeA7Hptg3caY1wvXizs9rvbPBN+235jZ+ScN8T21fRAb5sOwBnBHu2di25ng9xnL5Ow+8H1Tj3bR5cLWeTegZQe62eJa2124MtFjYfAKLtVgm7hWVMGLFNWS/Zfw6I/0GEDkRrJ+Nrvff/P6dSHpPpxrxWCj1CNxIzJd0U7oc96n50uwGCuY0PEMxlcI69eR1rgGDi2NORz0c/IfmMUv1oIqC9iPuR9qQAC4NGgEfg/cIOznA3OzjT3eyg6b+rHXQo6GoHHRYqdpibmL4p6p1CXCwyITYhO+DgWgHHhZsYmiDkjKQCHJdDzHEFOC4pduvdXGI0kgpwj81xMsc9GbB3PzWSSJIoYUEg2NRKK/PdplZocWnHlnhqZbORI5iNjN1x4qnVkLORIQfwsXcIm404meOeDdi7p+KZg8SYuJAx9i4xtbKME3pOPBOSGBuyljG1YoYT9gmrZjih54YsZ0zFMwiJMfGoO9o+QQjDoqAgKCbZN0It59P7RsawnI8XR6TL+ZR+fAIg04+P+TL9+DAv048PhjL9+JAh04+PEjL9+MBA6meSmKpNZGNIYv3vSTruJEYmeUtiDS8mCaAPKUkC6ANKdteiGVqCG83Oos2a9E5QDZkRT3Xj3O2odSn2tv/0EqyIGss0LiUsM/VkY5nGpYRlpvZtLNO4lLDMLDoYyzQuJSwzqz3GMo1LCcvMypSxTONSwjKzimYs07iUsMwsXxrLNC4lLDPrxsYyjUsJy9Q+OaOZxqWFZqt++UelkGYrf/lHpZBmq3/5R6WQZiuA+UelkGargPlHpZBmK4H5R6WQZquB+UelkGYrgvlHpZBmq4L5R6WI5h6OZcClFttc1xnLUAHEne+1AJKKcUUsVQGE32AB5BNTtwBiD+5zyLqecmT/G8+xnHLUenaFPPthZ1cO61d3doX0j7oDeCR+Ym1XePhMEME2SvpBZKOk/S8AVIjI9pRPiSxPxT/Wf6heIzom16Nu+9CPfd29fOhHn0dMgeBrFWkRONh8oLGxqaGh9nLNxb1LlQs7b0tvil83v6x/ZN+yrzt/AV/8/aA="/>
+      <Werkbank::Model::Property name="Werkbank::ObjectSelectionClient::isExpanded" value="true"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::FindOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Find Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="OBJECT"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Object Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+      </Werkbank::Model::FindOptions>
+    </Werkbank::Model::SceneNavigator>
+    <Werkbank::Model::ObjectInspector>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Object Inspector"/>
+      <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::uiState" value="nygAAHic7VhRb5swEN5zfwVCe5zWZpu0hykPSzZVkYZaNdW0PXrhknoiNrKdrdG0/z6DaaEU46MNKUt9igL4vjtOd/i7AxqPw+NpQoEpeXz24ycsVDBjMtVHLsJXR3+OgoBqjFFVNUGQ6Yx2vhA8ST4KILkiCGS+cM7l93E4Gr0vVo2BMZlypghlIApdqbXpqwiDiTTgC9nyjaqA7sIM8OXoDqAOKb2dCr5Ja1itlZ+vU8Ji0CglNnAPUHdnHH4FoeiCJA0h2sws4drh9mS5LYubnViM7GbGsHgYIM6T9noOSX5l9YbII+bWyNziXLXmG+sCVwO8N2dduriq1epSAGBKVcrtVv42DjEh4YLqmrMuno3vC87VTMEa6ToIlglZSU1X4QeUwV8MDAFyQhyAVnWL0qqyKhxbpRNbXMASBLAFxJOtZ4zBMwayXKV41miWZ8oab3bLGpStPGn8N6TRXq1SPGc0y3PjjMblhsV7S7WF2mUjEfkXwfJmD30RPEsV5Uw2p6wCrSdvvwNoK9H5loHy1kPLyDrFwXcH3xk6qp6gM7z1ncFme+Cd4eZzWOcwfZNoCWqXTcJUSD9KB98tUGkz4nuFQ/GoLw9zRRR0Zy5PCS1B7ZQSsvp4OijF04FD0TjlldJOB5eCMLnkYt33LNPniPvOj7g22wePuOcCflH4PfARd7YmK8jyo2lQPqJJOfjI3Zg+UZkmZBvxGFwpy02wacuklUoQXdEdfUTTiKQpZasnCN4+yeCCn/KEC+dE00Pgds7FBT5jS77PsPc8aUYgr4awNZEv6zl8WNvyFDTpk2Tfz8mO9uVkwq+H/Hj3MpFULm5Pi5P8oP/078U/uoXksw=="/>
+      <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::isExpanded" value="true"/>
+      <Werkbank::Model::Property name="Werkbank::Inspector::inspectedObjectSelectionId" value="/Clients/Object Inspector/Pinned"/>
+      <Werkbank::Model::FilterOptions>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="PROPERTY"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Property Criteria/Default"/>
+        <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+      </Werkbank::Model::FilterOptions>
+      <Werkbank::Model::ObjectSelection>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Pinned"/>
+        <Werkbank::Model::Property name="Werkbank::ObjectSelection::selectedObjectIds" value="/Preferences Container/ProjectUserPreferences/Appearance"/>
+      </Werkbank::Model::ObjectSelection>
+      <Werkbank::Model::ReferenceInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="References"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="PROPERTY"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Property Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+      </Werkbank::Model::ReferenceInspector>
+      <Werkbank::Model::PropertyInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Properties"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelection::selectedPropertyIds" value="Murl::Graph::TextGeometry::text"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelection::selectedValueIndices" value="-1"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::PropertyInspector::propertyTreeMode" value="FLAT"/>
+        <Werkbank::Model::Property name="Werkbank::PropertyInspector::propertySelectionMode" value="MERGED_IN_ANY_OBJECT"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="PROPERTY"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Property Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+        <Werkbank::Model::PropertyPanel>
+          <Werkbank::Model::Property name="Werkbank::PropertyPanel::propertyPanelMode" value="LIST"/>
+        </Werkbank::Model::PropertyPanel>
+      </Werkbank::Model::PropertyInspector>
+      <Werkbank::Model::StateInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="State"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="PROPERTY"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Property Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+      </Werkbank::Model::StateInspector>
+      <Werkbank::Model::ResourceInspector>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Resource"/>
+        <Werkbank::Model::Property name="Werkbank::PropertySelectionClient::isExpanded" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ResourceInspector::activeImagePresetId" value="/Presets/Image/Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::ResourceInspector::activeMeshPresetId" value="/Presets/Mesh/Default Preset"/>
+        <Werkbank::Model::Property name="Werkbank::ResourceInspector::activeShaderPresetId" value="/Presets/Shader/Default Preset"/>
+        <Werkbank::Model::FilterOptions>
+          <Werkbank::Model::Property name="Werkbank::Object::id" value="Filter Options"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteriaType" value="PROPERTY"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::criteria" value="/Property Criteria/Default"/>
+          <Werkbank::Model::Property name="Werkbank::CriteriaOptions::areControlsVisible" value="false"/>
+          <Werkbank::Model::Property name="Werkbank::FilterOptions::isFilterEnabled" value="false"/>
+        </Werkbank::Model::FilterOptions>
+      </Werkbank::Model::ResourceInspector>
+    </Werkbank::Model::ObjectInspector>
+    <Werkbank::Model::SceneEditor>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Editor"/>
+      <Werkbank::Model::Property name="Werkbank::ProjectObjectClient::uiState" value="dwYAAHictZVdS8MwFIa93q8IxUth81uQXUid3jgd6M0uD+tRDmRJSdLhEP+7Wdq1XaKDsAilTd7znuRJwkmpGGfDnBMKo4evCxTIJgUZqbKTwdeAMbJxJ7cqYxu9jkyBxBOsZWVcYBuqg8ejRuzk7XhKcn6nEFoDY9qJM6nn42zU07vUOjmXwthZUfU8u659Pt/Zee3s2rOG5mBh+6zNYpHjwpAUv+RYh558liAKtE6jKsxuA9N3KDmI0wiIB+Im2ImDCc4iCHJYooKXcrMT4T4fCHIeDfIMK/qA/ziWiwiWGa2kSQ1wGQHwpkDod6mWqSGuYipEQJl6/uvoCp3KAlNT3ERQ3JMuOaxTV4gn7HR7nbbZNrw7xr/B7R/hUcmqf3B/4jVjuo992efoB3jTSYk="/>
+      <Werkbank::Model::Property name="Werkbank::ProjectObjectClient::isExpanded" value="true"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::focusedObjectSelectionId" value="/Clients/Scene Editor/Edited"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::linkedObjectSelectionId" value="/Clients/Scene Navigator"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::focusedPanelIndex" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneFilterPreset0Id" value="/Presets/SceneFilter/Default Preset 1"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneFilterPreset1Id" value="/Presets/SceneFilter/Default Preset 2"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneFilterPreset2Id" value="/Presets/SceneFilter/Default Preset 3"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneFilterPreset3Id" value="/Presets/SceneFilter/Default Preset 4"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneEntityPreset0Id" value="/Presets/SceneEntity/Default Preset"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneEntityPreset1Id" value="/Presets/SceneEntity/Default Preset"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneEntityPreset2Id" value="/Presets/SceneEntity/Default Preset"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneEntityPreset3Id" value="/Presets/SceneEntity/Default Preset"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset00Id" value="/Presets/SceneSelection/Mutable Transform"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset10Id" value="/Presets/SceneSelection/Mutable Transform"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset20Id" value="/Presets/SceneSelection/Mutable Transform"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset30Id" value="/Presets/SceneSelection/Mutable Transform"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset01Id" value="/Presets/SceneSelection/Actual Node"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset11Id" value="/Presets/SceneSelection/Actual Node"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset21Id" value="/Presets/SceneSelection/Actual Node"/>
+      <Werkbank::Model::Property name="Werkbank::SceneEditor::sceneSelectionPreset31Id" value="/Presets/SceneSelection/Actual Node"/>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCullingEnabled" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraRelative" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrthographic" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrbiting" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraNearPlane" value="0.0625"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFarPlane" value="1048576"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFov" value="1.5"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosZ" value="500"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotR" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotI" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotJ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotK" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformMode" value="MOVE"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformSpace" value="PARENT"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isPositionSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isRotationSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::positionSnapValue" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::rotationSnapValue" value="15"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::flags" value="3"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCullingEnabled" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraRelative" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrthographic" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrbiting" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraNearPlane" value="0.0625"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFarPlane" value="1048576"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFov" value="1.5"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosX" value="3347.1218"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosY" value="10082.651"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosZ" value="16211.812"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotR" value="0.95988756"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotI" value="-0.26315969"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotJ" value="0.093333103"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotK" value="0.025587834"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotZ" value="-500"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotZ" value="-500"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformMode" value="MOVE"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformSpace" value="PARENT"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isPositionSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isRotationSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::positionSnapValue" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::rotationSnapValue" value="15"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::flags" value="3"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 2"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCullingEnabled" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraRelative" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrthographic" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrbiting" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraNearPlane" value="0.0625"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFarPlane" value="1048576"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFov" value="1.5"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosY" value="500"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotR" value="0.70710677"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotI" value="-0.70710677"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotJ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotK" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformMode" value="MOVE"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformSpace" value="PARENT"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isPositionSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isRotationSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::positionSnapValue" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::rotationSnapValue" value="15"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::flags" value="0"/>
+      </Werkbank::Model::ScenePanel>
+      <Werkbank::Model::ScenePanel>
+        <Werkbank::Model::Property name="Werkbank::Object::id" value="Scene Panel 3"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCullingEnabled" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraRelative" value="true"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrthographic" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isCameraOrbiting" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraNearPlane" value="0.0625"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFarPlane" value="1048576"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraFov" value="1.5"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPosZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotR" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotI" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotJ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraRotK" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::cameraPivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotX" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotY" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::scenePivotZ" value="0"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformMode" value="MOVE"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::transformSpace" value="PARENT"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isPositionSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::isRotationSnapEnabled" value="false"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::positionSnapValue" value="1"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::rotationSnapValue" value="15"/>
+        <Werkbank::Model::Property name="Werkbank::ScenePanel::flags" value="4095"/>
+      </Werkbank::Model::ScenePanel>
+    </Werkbank::Model::SceneEditor>
+    <Werkbank::Model::TimeControls>
+      <Werkbank::Model::Property name="Werkbank::Object::id" value="Time Controls"/>
+      <Werkbank::Model::Property name="Werkbank::ProjectObjectClient::uiState" value="TwcAAHiczVRdS8MwFPV5vyIUH4Vt+ih9kCG+TBxOhj5m3VUui01JUrSI/920Xdu0TbIWNjCUNDn35OZ+9BR3YTBdMIRYyekLfgJZ8FgJzmRwNfmZEIKakOMGTEhuKE2PFOMlzXiqCkNlKo2XswPYwKWhcraO9MzuBNCaSIgswBWXb2EwM/DGReNE3w7C4LRZPl6X6UjHTe+l6KOW5DUwiBTy+EHwNLEc1DR5/53QeAearkQKwW2P9NuHikjmIyJZMZptabSvGnGWgK5HBLRBiVtkqLKzhHIzKhT4ekryNp24LB2gtTU29bJedNrb1lIuTqY/7/8npjoyexl7JRymuA0IhRFlDpm6+2oViJ3uz9V/0vNf8B87FE1AvxLNqPv52u7n8EuG5XbcS+nnmXNbD8zxzuiHDIO5RSLNsAj3qMlhsMIW8FT6LF560s/FH3job1o="/>
+      <Werkbank::Model::Property name="Werkbank::ProjectObjectClient::isExpanded" value="true"/>
+      <Werkbank::Model::Property name="Werkbank::TimeControls::linkedObjectSelectionId" value="/Clients/Scene Navigator"/>
+      <Werkbank::Model::Property name="Werkbank::TimeControls::framesPerSecond" value="60"/>
+      <Werkbank::Model::Property name="Werkbank::TimeControls::viewScale" value="1"/>
+      <Werkbank::Model::Property name="Werkbank::TimeControls::viewOffset" value="0"/>
+    </Werkbank::Model::TimeControls>
+  </Werkbank::Model::ClientContainer>
+</Werkbank::Model::Project>

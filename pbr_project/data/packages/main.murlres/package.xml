@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+
+<Package id="main">
+
+  <!-- Graph resources -->
+  <Resource id="main_graph" fileName="main_graph.xml"/>
+
+  <!-- Image resources -->
+  <Resource id="ImageSkybox1Nx" fileName="ImageSkybox1Nx.murl"/>
+  <Resource id="ImageSkybox1Ny" fileName="ImageSkybox1Ny.murl"/>
+  <Resource id="ImageSkybox1Nz" fileName="ImageSkybox1Nz.murl"/>
+  <Resource id="ImageSkybox1Px" fileName="ImageSkybox1Px.murl"/>
+  <Resource id="ImageSkybox1Py" fileName="ImageSkybox1Py.murl"/>
+  <Resource id="ImageSkybox1Pz" fileName="ImageSkybox1Pz.murl"/>
+  <Resource id="ImageIrradiance1Nx" fileName="ImageIrradiance1Nx.hdr"/>
+  <Resource id="ImageIrradiance1Ny" fileName="ImageIrradiance1Ny.hdr"/>
+  <Resource id="ImageIrradiance1Nz" fileName="ImageIrradiance1Nz.hdr"/>
+  <Resource id="ImageIrradiance1Px" fileName="ImageIrradiance1Px.hdr"/>
+  <Resource id="ImageIrradiance1Py" fileName="ImageIrradiance1Py.hdr"/>
+  <Resource id="ImageIrradiance1Pz" fileName="ImageIrradiance1Pz.hdr"/>
+  <Resource id="ImageSkybox2Nx" fileName="ImageSkybox2Nx.murl"/>
+  <Resource id="ImageSkybox2Ny" fileName="ImageSkybox2Ny.murl"/>
+  <Resource id="ImageSkybox2Nz" fileName="ImageSkybox2Nz.murl"/>
+  <Resource id="ImageSkybox2Px" fileName="ImageSkybox2Px.murl"/>
+  <Resource id="ImageSkybox2Py" fileName="ImageSkybox2Py.murl"/>
+  <Resource id="ImageSkybox2Pz" fileName="ImageSkybox2Pz.murl"/>
+  <Resource id="ImageIrradiance2Nx" fileName="ImageIrradiance2Nx.hdr"/>
+  <Resource id="ImageIrradiance2Ny" fileName="ImageIrradiance2Ny.hdr"/>
+  <Resource id="ImageIrradiance2Nz" fileName="ImageIrradiance2Nz.hdr"/>
+  <Resource id="ImageIrradiance2Px" fileName="ImageIrradiance2Px.hdr"/>
+  <Resource id="ImageIrradiance2Py" fileName="ImageIrradiance2Py.hdr"/>
+  <Resource id="ImageIrradiance2Pz" fileName="ImageIrradiance2Pz.hdr"/>
+  <Resource id="ImageEyeAlbedo" fileName="ImageEyeAlbedo.png"/>
+  <Resource id="ImageEyeAo" fileName="ImageEyeAo.png"/>
+  <Resource id="ImageEyeMetalness" fileName="ImageEyeMetalness.png"/>
+  <Resource id="ImageEyeNormals" fileName="ImageEyeNormals.png"/>
+  <Resource id="ImageEyeRoughness" fileName="ImageEyeRoughness.png"/>
+  <Resource id="ImageBaseBlack" fileName="ImageBaseBlack.png"/>
+  <Resource id="ImageBaseNormals" fileName="ImageBaseNormals.png"/>
+  <Resource id="ImageBaseWhite" fileName="ImageBaseWhite.png"/>
+  <Resource id="ImageButtonArrow" fileName="ImageButtonArrow.png"/>
+
+  <!-- Mesh resources -->
+  <Resource id="MeshSphereModel" fileName="MeshSphereModel.murl"/>
+  <Resource id="MeshEyeModel" fileName="MeshEyeModel.murl"/>
+  <Resource id="MeshScleraModel" fileName="MeshScleraModel.murl"/>
+
+  <!-- Shader resources -->
+  <Resource id="ShaderPbrShader" fileName="ShaderPbrShader.xml"/>
+  <Resource id="ShaderSkyboxShader" fileName="ShaderSkyboxShader.xml"/>
+
+  <!-- Static graph instances -->
+  <Instance graphResourceId="main_graph"/>
+
+</Package>

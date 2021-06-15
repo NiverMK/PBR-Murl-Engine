@@ -1,0 +1,234 @@
+<?xml version="1.0" ?>
+ 
+<Shader>
+ 
+    <Attributes>
+        <Attribute item="COORD" type="FLOAT_VECTOR_4" precision="HIGH" />
+        <Attribute item="NORMAL" type="FLOAT_VECTOR_3" precision="MEDIUM" />
+        <Attribute item="BINORMAL" type="FLOAT_VECTOR_3" precision="MEDIUM" />
+        <Attribute item="TANGENT" type="FLOAT_VECTOR_3" precision="MEDIUM" />
+        <Attribute item="TEXCOORD_0" type="FLOAT_VECTOR_2" precision="MEDIUM" name="aTexCoord0" />
+    </Attributes>
+
+    <Textures>
+        <Texture unit="0" type="FLAT" precision="LOW" name="albedoTexture"/>
+        <Texture unit="1" type="FLAT" precision="LOW" name="normalsTexture"/>
+        <Texture unit="2" type="FLAT" precision="LOW" name="metalnessTexture"/>
+        <Texture unit="3" type="FLAT" precision="LOW" name="roughnessTexture"/>
+        <Texture unit="4" type="FLAT" precision="LOW" name="occlusionTexture"/>
+        <Texture unit="6" type="CUBE" precision="MEDIUM" name="irradianceTexture"/>
+        <Texture unit="7" type="CUBE" precision="MEDIUM" name="skyboxTexture"/>
+    </Textures>
+ 
+    <ConstantBuffers>
+        <ConstantBuffer item="MODEL"/>
+        <ConstantBuffer item="CAMERA"/>
+        
+        <ConstantBuffer item="LIGHT_0">
+            <Uniform item="LIGHT_ATTENUATION_0" type="FLOAT_VECTOR_4" precision="HIGH" arraySize="4" name="uLightAttenuation"/>
+            <Uniform item="LIGHT_POSITION_0" type="FLOAT_VECTOR_4" precision="HIGH" arraySize="4" name="uLightPosition"/>
+            <Uniform item="LIGHT_COLOR_DIFFUSE_0" type="FLOAT_VECTOR_4" precision="LOW" arraySize="4" name="uLightColorDiffuse"/>
+        </ConstantBuffer>
+        
+        <ConstantBuffer item="CUSTOM" name="VALUES">
+            <Uniform item="CUSTOM" name="albedoValue" type="FLOAT_VECTOR_4" precision="LOW" arraySize="0" value="1.0, 1.0, 1.0, 1.0"/>
+            <Uniform item="CUSTOM" name="metalnessValue" type="FLOAT" precision="LOW" arraySize="0" value="1.0"/>
+            <Uniform item="CUSTOM" name="roughnessValue" type="FLOAT" precision="LOW" arraySize="0" value="1.0"/>
+            <Uniform item="CUSTOM" name="exposureValue" type="FLOAT" precision="LOW" arraySize="0" value="4.0"/>
+        </ConstantBuffer>
+    </ConstantBuffers>
+ 
+    <Varyings>
+        <Varying name="vTexCoord" type="FLOAT_VECTOR_2" precision="MEDIUM"/>
+        <Varying name="vWorldPos" type="FLOAT_VECTOR_3" precision="MEDIUM"/>
+        <Varying name="vNormal" type="FLOAT_VECTOR_3" precision="MEDIUM"/>
+        <Varying name="vTangent" type="FLOAT_VECTOR_3" precision="MEDIUM"/>
+        <Varying name="vBinormal" type="FLOAT_VECTOR_3" precision="MEDIUM"/>
+    </Varyings>
+ 
+    <VertexSource language="GLSL_ES_120">
+        <![CDATA[
+            void main()
+            {
+                vWorldPos = (uModelMatrix * aPosition).xyz;
+                gl_Position = uCameraViewProjectionMatrix * vec4(vWorldPos, 1.0);
+                
+                vNormal = normalize(mat3(uModelMatrix) * aNormal);
+                vTangent = normalize(mat3(uModelMatrix) * aTangent);
+                vBinormal = normalize(mat3(uModelMatrix) * aBinormal);
+                
+                vTexCoord = aTexCoord0;
+            }
+        ]]>
+    </VertexSource>
+    <VertexSource inputLanguage="GLSL_ES_120" outputLanguage="GLSL_ES_300"/>
+    
+    <FragmentSource language="GLSL_ES_120">
+        <![CDATA[
+            /* Adding extension
+            https://www.khronos.org/registry/OpenGL/extensions/EXT/EXT_shader_texture_lod.txt
+            */
+            #extension GL_EXT_shader_texture_lod : require
+
+            const float PI = 3.14159;
+            
+            vec4 albedo;
+            vec3 normal;
+            float metalness;
+            float roughness;
+            float occlusion;
+            vec3 F0;
+                        
+            void readTextures()
+            {
+                albedo = texture2D(albedoTexture, vTexCoord);
+                //srgb to linear
+                albedo.rgb = pow(albedo.rgb, vec3(2.2));
+                
+                occlusion = texture2D(occlusionTexture, vTexCoord).x;
+                metalness = texture2D(metalnessTexture, vTexCoord).x;
+                roughness = texture2D(roughnessTexture, vTexCoord).x;
+                normal = texture2D(normalsTexture, vTexCoord).rgb;
+                
+                normal = normal * vec3(2.0) - vec3(1.0);
+                normal = normalize(normalize(vBinormal) * normal.x + normalize(vTangent) * normal.y + normalize(vNormal) * normal.z);
+            }
+            
+            vec3 Illumination(float cos_normal_light, int lightNum)
+            {
+                //light intensity is stored in alpha channel of uLightColorDiffuse = [0.0...1.0]
+                float intensity = uLightColorDiffuse[lightNum].a * 1000.0;
+                float distance = abs(length(uLightPosition[lightNum].xyz - vWorldPos));
+                                
+                float attenuation = uLightAttenuation[lightNum].x + distance * uLightAttenuation[lightNum].y + distance * distance * uLightAttenuation[lightNum].z;
+                
+                if(attenuation < 1.0)
+                {
+                    return vec3(0.0);
+                }
+
+                return uLightColorDiffuse[lightNum].xyz * intensity * cos_normal_light / attenuation;
+            }
+            
+            vec3 FresnelSchlick(float cos_median_camera)
+            {
+                return F0 + (max(F0, 1.0 - roughness) - F0) * pow(1.0 - cos_median_camera, 5);
+            }
+            
+            float TrowbridgeReitzGGX(float cos_normal_median)
+            {
+                float alpha = roughness * roughness;
+                float beta = cos_normal_median * cos_normal_median;
+                
+                float NDF = alpha / (PI * (beta * (alpha - 1.0) + 1.0) * (beta * (alpha - 1.0) + 1.0));
+                
+                return NDF;
+            }
+            
+            float SchlickGGX(float cosAlpha)
+            {
+                float k = pow(roughness + 1.0, 2.0) / 8.0;
+                
+                return cosAlpha / (cosAlpha * (1.0 - k) + k);
+            }
+            
+            float SmithGGX(float cos_normal_camera, float cos_normal_light)
+            {
+                return SchlickGGX(cos_normal_camera) * SchlickGGX(cos_normal_light);
+            }
+            
+            vec3 BlinnPhong(vec3 vecNormal, vec3 vecToCamera, float cos_normal_camera)
+            {
+                vec3 color = vec3(0.0);
+                
+                for(int i = 0; i < 4; i++)
+                {
+                    vec3 vecToLight = normalize(uLightPosition[i].xyz - vWorldPos);
+                    float cos_normal_light = max(0.0, dot(vecNormal, vecToLight));
+                    
+                    vec3 L = Illumination(cos_normal_light, i);
+                    
+                    if((L.r + L.g + L.b) < 0.01)
+                        continue;
+                        
+                    vec3 vecMedian = normalize(vecToCamera + vecToLight);
+
+                    float cos_median_camera = max(0.0, dot(vecMedian, vecToCamera));
+                    float cos_normal_median = max(0.0, dot(vecNormal, vecMedian));
+                    
+                    vec3 F = FresnelSchlick(cos_median_camera);
+                    float D = TrowbridgeReitzGGX(cos_normal_median);
+                    float G = SmithGGX(cos_normal_camera, cos_normal_light);
+                    
+                    vec3 Kd = (vec3(1.0) - F) * (1.0 - metalness);
+                    
+                    color += (Kd * albedo.rgb / PI + F * D * G / (4.0 * cos_normal_camera * cos_normal_light + 0.001)) * L;
+                }
+
+                return color;
+            }
+            
+            float ReflectionSchlickGGX(float cosAlpha)
+            {
+                float k = pow(roughness + 1.0, 2.0) / 8.0;
+                
+                return cosAlpha / (cosAlpha * (1.0 - k) + k);
+            }
+            
+            float ReflectionSmithGGX(float cos_normal_camera, float cos_normal_light)
+            {
+                return ReflectionSchlickGGX(cos_normal_camera) * ReflectionSchlickGGX(cos_normal_light);
+            }
+            
+            vec3 Reflection(vec3 vecReflect, float cos_normal_camera)
+            {
+                //invert X value of vector to compensate flip of cubemap
+                vecReflect.x = -vecReflect.x;
+                vec3 Reflection = textureCubeLodEXT(skyboxTexture, vecReflect, 5.0 * roughness).rgb;
+                vec3 Ambient = textureCube(irradianceTexture, vecReflect).rgb;
+                
+                Reflection *= exposureValue;
+                Ambient *= exposureValue;
+                
+                vec3 F = FresnelSchlick(cos_normal_camera);
+                float G = ReflectionSmithGGX(cos_normal_camera, cos_normal_camera) + 0.0075;
+            
+                vec3 Kd = (vec3(1.0) - F) * vec3(1.0 - metalness);
+            
+                vec3 color = Ambient * Kd * albedo.rgb + F * G / (4.0 * cos_normal_camera * cos_normal_camera + 0.01) * Reflection;
+
+                return color;
+            }
+            
+            void main()
+            {
+                readTextures();
+
+                albedo *= albedoValue.rgba;
+                metalness *= metalnessValue;
+                roughness *= max(0.005, roughnessValue);
+                F0 = clamp(albedo.xyz * metalness, vec3(0.04), vec3(1.0));
+                
+                vec3 cameraPos = vec3(uCameraWorldMatrix[3][0], uCameraWorldMatrix[3][1], uCameraWorldMatrix[3][2]);
+                vec3 vecNormal = normal;
+                vec3 vecToCamera = normalize(cameraPos - vWorldPos);
+                vec3 vecReflect = -reflect(vecToCamera, vecNormal);
+                
+                float cos_normal_camera = max(0.0, dot(vecNormal, vecToCamera));
+
+                vec3 color = BlinnPhong(vecNormal, vecToCamera, cos_normal_camera);
+                color += Reflection(vecReflect, cos_normal_camera);
+               
+                color *= occlusion;
+                               
+                color = color / (vec3(1.0) + color);
+                
+                color = pow(color, vec3(1.0 / 2.2));
+                
+                gl_FragColor = vec4(color, albedo.a);
+            }
+        ]]>
+    </FragmentSource>
+    <FragmentSource inputLanguage="GLSL_ES_120" outputLanguage="GLSL_ES_300"/>
+     
+</Shader>
