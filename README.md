@@ -28,8 +28,8 @@ xattr -cr /pathToApp/PbrProject.app
  
 ### Screenshots:
 
-![Screenshot 1]()
+![Screenshot 1](https://github.com/NiverMK/PBR-Murl-Engine/blob/master/screenshots/screenshot_1.jpg)
  
-![Screenshot 2]()
+![Screenshot 2](https://github.com/NiverMK/PBR-Murl-Engine/blob/master/screenshots/screenshot_2.jpg)
   
-![Screenshot 3]()
+![Screenshot 3](https://github.com/NiverMK/PBR-Murl-Engine/blob/master/screenshots/screenshot_3.jpg)
